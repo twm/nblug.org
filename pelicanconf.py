@@ -6,7 +6,7 @@ AUTHOR = u'NBLUG Board Members'
 SITENAME = u'North Bay Linux Users Group'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
