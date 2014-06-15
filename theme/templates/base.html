@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/nblug.css">
+  <link rel="alternate" type="application/atom+xml" title="NBLUG News and Events"
+        href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">
+</head>
+
+<body>
+<div id="wrap">
+    <div id="masthead">
+        <img src="/theme/images/nblug_tux.png" height="68" width="266" alt="North Bay Linux Users Group">
+    </div>
+    <nav>
+        {% for link_title, link_url in MENUITEMS %}
+            <a href="{{ SITEURL }}/{{ link_url }}">{{ link_title }}</a>
+        {% endfor %}
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <div id="sidebar">
+        <section>
+            <h2>Meetings</h2>
+            <p>We meet at 7:30 pm on the <strong>second Tuesday each month</strong> at <strong>O'Reilly Media</strong> in Sebastopol, CA (<a href="/locations">directions</a>).</p>
+            <p>Get updates via the <a href="http://nblug.org/mailman/listinfo/announce">announce mailing list</a>
+        </section>
+        <section>
+            <h2>Talk</h2>
+            <p>Ask for help, or just join in the chit-chat:
+            <p>#nblug on <a href="https://freenode.net/">freenode</a></p>
+            <p><a href="http://nblug.org/mailman/listinfo/talk">Talk mailing list</a>
+        </section>
+        <section id="sponsors">
+            <h2>Sponsors</h2>
+            <a href="http://www.sonic.net/"><img src="/theme/images/sonic.png" width="250"></a>
+            <a href="http://www.oreilly.com/"><img src="/theme/images/oreilly.png"></a>
+        </section>
+    </div>
+    <footer>
+        Copyright &copy;2003&ndash;2014 NBLUG Board Members.<br>
+        This work is made available under a <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative Commons Attribution-ShareAlike 2.0 Generic license</a>.<br>
+        Linux&reg; is the registered trademark of Linus Torvalds in the U.S. and other countries.
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/*!
+ * Styles for the nblug.org Pelican theme
+ * Copyright 2003-2014 NBLUG Board Members
+ * Creative Commons Attribution/ShareAlike 2.0 Generic license
+ *
+ * Original author: Tom Most, 2014
+ */
+
+body {
+    background: white;
+    color: #111;
+    font-family: sans-serif;
+}
+#wrap {
+}
+
+nav {
+    padding: 0.5em 0;
+}
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #369;
+    padding: 0 1em;
+}
+nav a:first-child {
+    padding-left: 0;
+}
+
+main {
+    float: left;
+    width: 70%;
+    margin: 0 1em 0 0;
+}
+#sidebar {
+    overflow: hidden;
+    font-size: smaller;
+}
+#sidebar > * {
+    margin-bottom: 2em;
+}
+#sidebar h2 {
+    font: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+#about {
+    background: #369;
+    color: #f2f8ff;
+    font-size: smaller;
+    padding: 0 1em;
+    /* FIXME: these borders are a hack to prevent margin collapsing */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#about :link,
+#about :visited {
+    color: #f2f8ff;
+}
+
+#sponsors {
+    background: white;
+}
+#sponsors img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+header h3 {
+    font: inherit;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+}
+header h1 {
+    margin: 0 0 0.6em 0;
+    font-size: x-large;
+}
+
+div.event-info {
+    margin: 1em 0;
+}
+div.event-info p {
+    margin: 0;
+}
+
+/* Permalinks in the header aren't very useful, so hide them unless interacted
+ * with */
+header :link,
+header :visited {
+    text-decoration: none;
+    color: inherit;
+}
+header :link:hover,
+header :link:focus,
+header :visited:hover,
+header :visited:focus {
+    text-decoration: underline;
+}
+
+p.pagination {
+    margin: 2em 0;
+    text-align: center;
+}
+p.pagination :link,
+p.pagination :visited {
+    /* TODO: Touchable buttons */
+}
+
+footer {
+    clear: both; /* Below the main columns */
+    background: white;
+    color: #444;
+    font-size: smaller;
+    padding: 1px solid 
+}
+footer :link,
+footer :visited {
+    color: inherit;
+}

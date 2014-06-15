@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% if page_name == 'index' %}
+        <section id="about">
+            <p>The North Bay Linux Users Group is a computer users serving the San Francisco North Bay and surrounding areas.
+           We strive to promote <a href="http://linuxfoundation.org/">Linux</a>, <a href="http://fsf.org/">Free Software</a>, <a href="http://opensource.org/">Open Source</a>, open standards, and to generally have a good time by hosting social events that educate, allow members to share ideas and knowledge and to build friendships.</p>
+           <p>We hold regular meetings on the second Tuesday of each month with a selected topic presented by a guest speaker.
+           Meetings and membership are free and open to the public.
+           Please sign up for the <a href="http://nblug.org/mailman/listinfo/announce">announce mailing list</a> to receive notifications of upcoming events, or join us on the <a href="http://nblug.org/mailman/listinfo/talk">talk mailing list</a> or in <a href="#irc">IRC</a> to get help with Linux.</p>
+        </section>
+    {% endif %}
+
+    {% include "include/article_list.html" %}
+{% endblock main %}

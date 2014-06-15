@@ -1,0 +1,36 @@
+<article>
+    <header>
+        {% if article.tags %}
+        <h3>
+            {# By convention articles should only have one tag so we
+               don't delmit them at all. #}
+            {% for tag in article.tags %}
+                {{ tag }}
+            {% endfor %}
+        </h3>
+        {% endif %}
+        <h1><a href="{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+    </header>
+
+    <div class="event-info">
+        {% if article.start %}
+            <p>Start: {{ article.start }}</p>
+        {% endif %}
+        {% if article.end %}
+            <p>End: {{ article.end }}</p>
+        {% endif %}
+        {% if article.speaker %}
+            <p>Speaker: {{ article.speaker }}</p>
+        {% endif %}
+        {% if article.location %}
+            <p>Location: <a href="/locations/">{{ article.location }}</a></p>
+        {% endif %}
+    </div>
+
+    {{ article.content }}
+
+    <footer>
+        Published {{ article.locale_date }}
+        {% if article.author %}by {{ article.author }}{% endif %}
+    </footer>
+</article>
