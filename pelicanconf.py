@@ -6,7 +6,8 @@ import os
 AUTHOR = 'NBLUG Board Members'
 SITENAME = 'North Bay Linux Users Group'
 
-SITEURL = os.environ.get('SITEURL', 'http://new.nblug.org')
+# Default to the devserver address.
+SITEURL = os.environ.get('SITEURL', 'http://localhost:8000')
 
 MENUITEMS = (
     ('News', ''),
@@ -20,8 +21,6 @@ DEFAULT_LANG = 'en'
 
 THEME = './theme'
 TYPOGRIFY = True
-
-FEED_ALL_ATOM = 'feed.xml'
 
 DEFAULT_CATEGORY = 'News'
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2}).*'

@@ -8,10 +8,9 @@ PY=$(CURDIR)/.venv/bin/python
 PELICAN=$(CURDIR)/.venv/bin/pelican
 PELICANOPTS=
 
-SSH_HOST=localhost
+SSH_HOST=enigma.wiredgoats.com
 SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
+SSH_TARGET_DIR=/data/nblug.org/new
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -72,9 +71,9 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
-	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_HOST):$(SSH_TARGET_DIR)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 .PHONY: init html help clean regenerate serve devserver publish ssh_upload rsync_upload
