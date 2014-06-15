@@ -49,8 +49,24 @@ TAGS_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
 
+# Enable RSS for backwards compatibility (a redirect at the old location of
+# /node/feed is necessary).
+FEED_ALL_RSS = 'feeds/all.rss'
+FEED_ALL_ATOM = 'feeds/all.atom'  # Redirected from /atom/feed
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 PLUGIN_PATH = 'plugins'
 PLUGINS = ['drupal_urls']
+
+STATIC_PATHS = [
+    'static/htaccess',
+    'static/robots.txt',
+    'static/humans.txt',
+]
+EXTRA_PATH_METADATA = {
+    'static/robots.txt': {'path': 'robots.txt'},
+    'static/humans.txt': {'path': 'humans.txt'},
+    'static/htaccess': {'path': '.htaccess'},
+}

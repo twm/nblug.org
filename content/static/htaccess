@@ -1,0 +1,5 @@
+RedirectMatch 301 /node/feed/?$ /feeds/all.rss
+RedirectMatch 301 /atom/feed/?$ /feeds/all.atom
+
+AddType application/atom+xml .atom
+AddType application/rss+xml .rss
