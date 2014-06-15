@@ -52,3 +52,6 @@ AUTHORS_SAVE_AS = ''
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['drupal_urls']
