@@ -57,8 +57,8 @@ FEED_ALL_ATOM = 'feeds/all.atom'  # Redirected from /atom/feed
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PLUGIN_PATH = 'plugins'
-PLUGINS = ['drupal_urls']
+PLUGIN_PATH = './plugins'
+PLUGINS = ['drupal_urls', 'event_calendar']
 
 STATIC_PATHS = [
     'static/htaccess',

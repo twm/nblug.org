@@ -13,11 +13,11 @@
     </header>
 
     <div class="event-info">
-        {% if article.start %}
-            <p>Start: {{ article.start }}</p>
-        {% endif %}
-        {% if article.end %}
-            <p>End: {{ article.end }}</p>
+        {% if article.event_start and article.event_end %}
+            <p>
+            When: {{ article.event_start|strftime("%a %B %d, %Y %I:%M %p") }}
+            to {{ article.event_end|strftime("%I:%M %p") }}
+            </p>
         {% endif %}
         {% if article.speaker %}
             <p>Speaker: {{ article.speaker }}</p>

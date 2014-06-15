@@ -29,7 +29,7 @@ You can build and view the site locally with these commands:
 
 This will launch a web server in the background and monitor the Pelican site contents and configuration, automatically rebuilding when changes occur.
 You can view this local site at <http://localhost:8000/>.
-When you're done you can stop it with ``make devserver stop``.
+When you're done you can stop it with ``make stopserver``.
 
 When you're ready to publish to the real site, run these commands:
 
