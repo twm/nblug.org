@@ -1,6 +1,6 @@
 Title: NBLUG Bylaws
-Save_As: bylaws/index.html
-URL: bylaws/
+Tags: about
+Slug: bylaws
 
 ## Article I: Officers and Elections
 
