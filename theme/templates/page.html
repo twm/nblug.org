@@ -6,5 +6,14 @@
 
 {% block main %}
     <h1>{{ page.title }}</h1>
+
+    {% if page.slug == 'about' or page.slug == 'constitution' or page.slug == 'bylaws' %}
+        <div class="toc">
+            <a href="/about/"{% if page.slug == 'about' %} rel="self"{% endif %}>About Us</a>
+            <a href="/constitution/"{% if page.slug == 'constitution' %} rel="self"{% endif %}>Constitution</a>
+            <a href="/bylaws/"{% if page.slug == 'bylaws' %}rel="self"{% endif %}>Bylaws</a>
+        </div>
+    {% endif %}
+
     {{ page.content }}
 {% endblock %}

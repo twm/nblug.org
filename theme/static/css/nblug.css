@@ -112,6 +112,28 @@ p.pagination :visited {
     /* TODO: Touchable buttons */
 }
 
+/* A div containing links for internal navigation in the "About Us" section. */
+.toc {
+    float: right;
+    margin: 0 0 1em 1em;
+    background: #369;
+    color: #f2f8ff;
+    font-size: smaller;
+    padding: 0.75em 1em;
+    line-height: 1.75;
+}
+.toc :link,
+.toc :visited {
+    color: inherit;
+    display: block;
+}
+/* Style the current link as bold text */
+.toc :link[rel=self],
+.toc :visited[rel=self] {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 footer {
     clear: both; /* Below the main columns */
     background: white;
