@@ -1,5 +1,4 @@
 Title: NBLUG Constitution
-Tags: about
 Slug: constitution
 
 ## Article 1: Name

@@ -1,5 +1,4 @@
 Title: NBLUG Bylaws
-Tags: about
 Slug: bylaws
 
 ## Article I: Officers and Elections
