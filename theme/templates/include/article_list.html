@@ -4,10 +4,10 @@
 
 <p class="pagination">
     {% if articles_page.has_previous() %}
-        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&ldaquo;&nbsp;More Recent</a>
+        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&larr;&nbsp;More Recent</a>
     {% endif %}
-    Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}
+    <span>Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}</span>
     {% if articles_page.has_next() %}
-        <a href="{{ SITEURL }}/{{articles_next_page.url }}">Less Recent&nbsp;&rdaquo;</a>
+        <a href="{{ SITEURL }}/{{articles_next_page.url }}">Less Recent&nbsp;&rarr;</a>
     {% endif %}
 </p>

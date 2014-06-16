@@ -103,13 +103,24 @@ header :visited:focus {
     text-decoration: underline;
 }
 
-p.pagination {
+.pagination {
     margin: 2em 0;
     text-align: center;
+    line-height: 2;
 }
-p.pagination :link,
-p.pagination :visited {
-    /* TODO: Touchable buttons */
+.pagination span {
+    padding: 0.5em 1em;
+}
+.pagination a {
+    background: #369;
+    color: #f2f8ff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+.pagination a:hover,
+.pagination a:focus {
+    text-decoration: underline;
 }
 
 /* A div containing links for internal navigation in the "About Us" section. */
