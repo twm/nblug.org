@@ -62,7 +62,22 @@ In this example, the ``Speaker`` field is for the name of the presenter, while t
 The ``Tags`` field should contain one of these values:
 
  * general meeting
- * lightning talks
  * installfest
+ * board meeting
 
 In the filename "2016-11-20" is today's date, when this notice is posted.
+
+## Migrating Pages from the Old Site
+
+When migrating pages from the Drupal site, an additional metadata field can be used to make sure the page shows up with the same URL:
+
+    Druapl_Node: <number>
+
+You can get this value from the URL of the page, which will look something like this:
+
+    http://nblug.org/node/<number>
+
+See ``content/news/2011-11-08-gpu-password-cracking-election.md`` for an example of this.
+
+Some pages on Drupal don't actually list a publication date.
+For these, use the event date instead.
