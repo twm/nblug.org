@@ -16,15 +16,22 @@
 
 """
 Generate an iCalendar file which contains events defined in Pelican articles.
+
+The calendar is written to the location specified by the
+``FEED_ALL_ICALENDAR`` setting.
 """
 
 from __future__ import unicode_literals
 
+import errno
 import re
+import os
 import datetime
 
-from pelican import signals
+import pytz
 import icalendar
+import jinja2
+from pelican import signals
 
 
 # Matches a time range like "2014-01-02 7:00 am to 4:00 pm" or "2013/3/4
@@ -49,10 +56,13 @@ EVENT_RE = re.compile('''
 ''', re.IGNORECASE | re.VERBOSE)
 
 
-def register():
-    def get_generators(pelican):
-        return CalendarGenerator
+def get_generators(pelican):
+    # NB: This must be a global function, as signal receivers are
+    # weakly-referenced.
+    return CalendarGenerator
 
+
+def register():
     signals.article_generator_context.connect(coerce_metadata)
     signals.get_generators.connect(get_generators)
 
@@ -110,6 +120,7 @@ def coerce_metadata(generator, metadata=None):
 def event_from_article(article):
     """
     :param pelican.content.Article article:
+    :rtype: :class:`icalendar.Event`
     """
 
 
@@ -121,6 +132,7 @@ class CalendarGenerator(object):
     def __init__(self, context, settings, path, theme, output_path):
         self.context = context
         self.settings = settings
+        self.timezone = pytz.timezone(settings['TIMEZONE'])
 
     def generate_context(self):
         """
@@ -129,11 +141,37 @@ class CalendarGenerator(object):
         cal = icalendar.Calendar()
         cal.add('version', '2.0')
         cal.add('prodid', '-//Pelican Calendar Plugin//nblug.org//')
+        cal.add('x-wr-calname', 'NBLUG Events')
 
-        print self.context.keys()
-        self.context['calendar'] = cal
+        threshold = pytz.utc.localize(datetime.datetime.utcnow() - datetime.timedelta(days=60))
+
+        for article in self.context['articles']:
+            start = getattr(article, 'event_start', None)
+            if start and self.timezone.localize(start) > threshold:
+                e = icalendar.Event()
+                e.add('summary', jinja2.Markup(article.title).striptags())
+                e.add('dtstart', self.timezone.localize(start))
+                e.add('dtend', self.timezone.localize(article.event_end))
+                e.add('status', 'CONFIRMED')
+                if getattr(article, 'location', ''):
+                    e['location'] = icalendar.vText(article.location)
+                cal.add_component(e)
+
+        self.calendar = cal
+
+    def _open_w(self, writer, name):
+        path = os.path.join(writer.output_path, name)
+        try:
+            os.makedirs(os.path.dirname(path))
+        except OSError as e:
+            if e.errno != errno.EEXIST:
+                raise
+
+        return open(path, 'w')
 
     def generate_output(self, writer):
         """
+        Write the calendar to the output directory.
         """
-        # TODO
+        with self._open_w(writer, self.settings['FEED_ALL_ICALENDAR']) as f:
+            f.write(self.calendar.to_ical())

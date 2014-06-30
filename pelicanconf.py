@@ -54,6 +54,7 @@ AUTHORS_SAVE_AS = ''
 # /node/feed is necessary).
 FEED_ALL_RSS = 'feeds/all.rss'
 FEED_ALL_ATOM = 'feeds/all.atom'  # Redirected from /atom/feed
+FEED_ALL_ICALENDAR = 'feeds/all.ics'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
