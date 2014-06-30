@@ -150,8 +150,8 @@ class CalendarGenerator(object):
             if start and self.timezone.localize(start) > threshold:
                 e = icalendar.Event()
                 e.add('summary', jinja2.Markup(article.title).striptags())
-                e.add('dtstart', self.timezone.localize(start))
-                e.add('dtend', self.timezone.localize(article.event_end))
+                e.add('dtstart', self.timezone.localize(start).astimezone(pytz.utc))
+                e.add('dtend', self.timezone.localize(article.event_end).astimezone(pytz.utc))
                 e.add('status', 'CONFIRMED')
                 if getattr(article, 'location', ''):
                     e['location'] = icalendar.vText(article.location)
