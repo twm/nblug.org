@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2012-05-08 7:30 pm - 9:00 pm
 Speaker: Frank Ball
 Location: O'Reilly Media
-Author: Kyle Rankin
+Author: Glenn Kerbein
 Date: 2012-05-03 13:32
 Drupal_Node: 179
 

@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2012-09-11 7:30 pm - 9:00 pm
 Speaker: Roger House
 Location: O'Reilly Media
-Author: Kyle Rankin
+Author: Glenn Kerbein
 Date: 2012-09-11 9:04
 Drupal_Node: 183
 

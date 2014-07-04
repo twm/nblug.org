@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2012-10-09 7:30 pm - 9:00 pm
 Speaker: Kyle Rankin
 Location: O'Reilly Media
-Author: Kyle Rankin
+Author: Glenn Kerbein
 Date: 2012-09-26 16:29
 Drupal_Node: 184
 

@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2012-07-10 7:30 pm - 9:00 pm
 Speaker: Glenn Kerbein
 Location: O'Reilly Media
-Author: Kyle Rankin
+Author: Glenn Kerbein
 Date: 2012-07-09 21:17
 Drupal_Node: 181
 

@@ -4,7 +4,7 @@ Event: 2011-09-13 7:30 pm to 9:00 pm
 Speaker: Alison Chaiken
 Location: O'Reilly Media's Tarsier conference room
 Author: Glenn Kerbein
-Date: 2014-06-02 21:46
+Date: 2011-09-13 21:46
 Drupal_Node: 171
 
 Desktop, laptop, phone, tablet . . . car!  Which OS should we run on
