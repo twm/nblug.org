@@ -1,0 +1,9 @@
+The following pages on the Drupal site are missing content, are lacking in
+information, or otherwise cannot be ported over to Pelican.
+
+News:
+* Drupal http://nblug.org/node/12
+* iPod on Linux on iPod http://nblug.org/general/2004/07/13 - Missing a node
+
+Pages:
+
