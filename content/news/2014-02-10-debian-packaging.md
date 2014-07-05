@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2014-02-11 7:30 pm to 9:00 pm
 Speaker: Tom Most
 Location: O'Reilly Media
-Author: Allan Cecil
+Author: Glenn Kerbein
 Date: 2014/02/10 13:10
 Drupal_Node: 197
 

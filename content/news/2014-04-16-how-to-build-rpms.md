@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2014-05-13 7:30 pm to 9:00 pm
 Speaker: Frank Ball
 Location: O'Reilly Media
-Author: Allan Cecil
+Author: Glenn Kerbein
 Date: 2014-04-16 11:46
 Drupal_Node: 200
 

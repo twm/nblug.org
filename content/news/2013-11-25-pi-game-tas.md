@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2013-12-10 7:30 pm to 9:00 pm
 Speaker: Allan Cecil
 Location: O'Reilly Media
-Author: Allan Cecil
+Author: Glenn Kerbein
 Date: 2013-11-25 18:04
 Drupal_Node: 196
 
