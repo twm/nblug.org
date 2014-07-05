@@ -24,6 +24,11 @@ TYPOGRIFY = True
 
 DEFAULT_CATEGORY = 'News'
 DEFAULT_PAGINATION = 12
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
+
 FILENAME_METADATA = '(?P<date>\d{4}-\d{2}-\d{2}).*'
 
 DELETE_OUTPUT_DIRECTORY = True
@@ -49,6 +54,7 @@ TAG_SAVE_AS = ''
 TAGS_SAVE_AS = ''
 AUTHOR_SAVE_AS = ''
 AUTHORS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
 
 # Enable RSS for backwards compatibility (a redirect at the old location of
 # /node/feed is necessary).
