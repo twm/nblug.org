@@ -81,3 +81,20 @@ See ``content/news/2011-11-08-gpu-password-cracking-election.md`` for an example
 
 Some pages on Drupal don't actually list a publication date.
 For these, use the event date instead.
+
+## FAQ
+
+### Why am I seeing warnings about variants of an article?
+
+If you are seeing messages like these, they indicate that the "slug" (name to use in the page URL) collides with another article:
+
+    WARNING: There are 2 variants of "hackfest" with lang en
+    WARNING:     /home/twm/nblug.org/content/news/2011-04-12-hackfest.md
+    WARNING:     /home/twm/nblug.org/content/news/2012-01-10-hackfest.md
+
+You can fix this by adding a ``Slug`` metadata field at the top of the file.
+For a hackfest, try adding the year so that the whole like looks something like this:
+
+    Slug: hackfest-2014
+
+Note that this will change the URL of the page, so it's best to catch this *before* publishing the article.
