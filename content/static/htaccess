@@ -1,5 +1,7 @@
 RedirectMatch 301 /node/feed/?$ /feeds/all.rss
 RedirectMatch 301 /atom/feed/?$ /feeds/all.atom
+RedirectMatch 301 /event/ical /feeds/all.ics
 
 AddType application/atom+xml .atom
 AddType application/rss+xml .rss
+AddType text/calendar .ics
