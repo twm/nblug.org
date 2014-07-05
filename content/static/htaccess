@@ -5,3 +5,10 @@ RedirectMatch 301 /event/ical /feeds/all.ics
 AddType application/atom+xml .atom
 AddType application/rss+xml .rss
 AddType text/calendar .ics
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 months"
+    ExpiresByType text/css "access plus 1 weeks"
+    ExpiresDefault "access plus 1 days"
+</IfModule>
