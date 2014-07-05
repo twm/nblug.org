@@ -31,6 +31,7 @@ nav a {
     text-decoration: none;
     color: #369;
     padding: 0 1em;
+    white-space: nowrap;
 }
 nav a:first-child {
     padding-left: 0;
