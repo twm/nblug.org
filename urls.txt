@@ -8,7 +8,6 @@ http://nblug.org/node/8
 http://nblug.org/node/9
 http://nblug.org/node/10
 http://nblug.org/node/11
-http://nblug.org/node/12
 http://nblug.org/node/13
 http://nblug.org/node/15
 http://nblug.org/node/16
