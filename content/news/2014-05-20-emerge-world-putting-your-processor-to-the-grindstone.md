@@ -3,7 +3,7 @@ Tags: general meeting
 Event: 2014-06-10 7:30 pm to 9:00 pm
 Speaker: Glenn Kerbein
 Location: O'Reilly Media's Tarsier conference room
-Author: Allan Cecil
+Author: Glenn Kerbein
 Date: 2014-05-20 23:12
 Drupal_Node: 201
 
