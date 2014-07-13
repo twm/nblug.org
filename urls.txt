@@ -96,8 +96,3 @@ http://nblug.org/node/111
 http://nblug.org/node/112
 http://nblug.org/node/113
 http://nblug.org/node/114
-http://nblug.org/node/115
-http://nblug.org/node/116
-http://nblug.org/node/117
-http://nblug.org/node/118
-http://nblug.org/node/119

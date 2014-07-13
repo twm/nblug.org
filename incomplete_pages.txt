@@ -16,4 +16,7 @@ Meeting notes:
 * http://nblug.org/node/145 - 2009-08-25 board meeting minutes for August 09
 * http://nblug.org/node/144 - 2009-07-21 board meeting minutes for July 09
 * http://nblug.org/node/136 - 2009-05-29 board meeting minutes for June 09
+* http://nblug.org/node/118 - Board Meeting Minutes
+* http://nblug.org/node/117 - CANCELLED: Installfest PLUS! (was: Saturday,
+* October 20th) :(
 
