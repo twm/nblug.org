@@ -4,6 +4,18 @@ information, or otherwise cannot be ported over to Pelican.
 News:
 * Drupal http://nblug.org/node/12
 * iPod on Linux on iPod http://nblug.org/general/2004/07/13 - Missing a node
+* http://nblug.org/node/117 - CANCELLED: Installfest PLUS! (was: Saturday,
+** October 20th) :(
+* http://nblug.org/node/21 - Picn*x13 [Not published]
+* http://nblug.org/node/1 - LAMP With YellowDog Linux [no date]
+* http://nblug.org/general/2004/09/14 - Knoppix [missing node, date]
+* http://nblug.org/node/14 - Election Incident Reporting System [missing date]
+* http://nblug.org/node/15 - Linux on SPARC [missing date]
+* http://nblug.org/node/16 - Verified Voting Recap [missing date]
+* http://nblug.org/node/28 - Bugscan: Auditing binaries without source code
+** [missing date]
+* http://nblug.org/node/24 - Firefox Extensions [missing date]
+* http://nblug.org/node/29 - System Rescue With Knoppix [missing date]
 
 Pages:
 
@@ -17,8 +29,14 @@ Meeting notes:
 * http://nblug.org/node/144 - 2009-07-21 board meeting minutes for July 09
 * http://nblug.org/node/136 - 2009-05-29 board meeting minutes for June 09
 * http://nblug.org/node/118 - Board Meeting Minutes
-* http://nblug.org/node/117 - CANCELLED: Installfest PLUS! (was: Saturday,
-* October 20th) :(
 * http://nblug.org/node/114 - Board Meeting Minutes - 9/18/2007
 * http://nblug.org/node/111 - Board Meeting Minutes - 7/17/2007
+* http://nblug.org/board/minutes/200501 - January 2005 Board Meeting Minutes
+* http://nblug.org/node/42 - NBLUG Board Meeting
 
+Nominations/Other:
+* http://nblug.org/nominations/2004/12/14 - Board Nominations for 2004/12/14
+** elections [bad url]
+* http://nblug.org/hddpledge - 2004 Hard Disk Pledge Drive
+* http://nblug.org/installfest/2004/07/24 - InstallFest [missing date, no
+** node]
