@@ -1,5 +1,6 @@
 The following pages on the Drupal site are missing content, are lacking in
 information, or otherwise cannot be ported over to Pelican.
+None of these pages have been converted.
 
 News:
 * Drupal http://nblug.org/node/12
@@ -16,6 +17,11 @@ News:
 ** [missing date]
 * http://nblug.org/node/24 - Firefox Extensions [missing date]
 * http://nblug.org/node/29 - System Rescue With Knoppix [missing date]
+* http://nblug.org/node/30 - General Meeting; CoLinux [missing date]
+* http://nblug.org/node/31 - General Meeting; Accessibility [missing date]
+* http://nblug.org/node/27 - InstallFest [missing date]
+* http://nblug.org/node/32 - General Meeting; Linux clustering at ILM [no
+** date]
 
 Pages:
 
@@ -33,6 +39,28 @@ Meeting notes:
 * http://nblug.org/node/111 - Board Meeting Minutes - 7/17/2007
 * http://nblug.org/board/minutes/200501 - January 2005 Board Meeting Minutes
 * http://nblug.org/node/42 - NBLUG Board Meeting
+* http://nblug.org/node/43 - 2003/03/23 Agenda [missing date]
+* http://nblug.org/node/44 - 2003/03/23 Minutes [missing date]
+* http://nblug.org/node/46 - 2003/04/04 Minutes -- only half done so far
+** [missing date]
+* http://nblug.org/node/48 - 2003/05/03 Minutes [missing date]
+* http://nblug.org/node/50 - 2003/08/21 minutes [missing date]
+* http://nblug.org/node/45 - 2003/04/04 Agenda [missing date]
+* http://nblug.org/node/47 - 2003/05/03 Agenda [missing date]
+* http://nblug.org/node/49 - 2003/08/21 agenda [missing date]
+* http://nblug.org/node/51 - 2003/10/30 Agenda [missing date]
+* http://nblug.org/node/52 - 2003/12/11 Agenda [missing date]
+* http://nblug.org/node/53 - 2004/03/11 Agenda [missing date]
+* http://nblug.org/node/54 - 2004/02/06 Agenda [missing date]
+* http://nblug.org/node/55 - 2004/02/06 Minutes [missing date]
+* http://nblug.org/node/58 - 2005/01/25 Agenda [missing date]
+* http://nblug.org/node/57 - 2004/10/28 Agenda [missing date]
+* http://nblug.org/node/56 - 2004/07/08 Agenda [missing date]
+* http://nblug.org/node/59 - 2005/03/29 Minutes [missing date]
+* http://nblug.org/node/62 - NBLUG Board Meeting [missing date]
+* http://nblug.org/board/minutes/20050611 - June 2005 Board Meeting Minutes
+** [bad url]
+
 
 Nominations/Other:
 * http://nblug.org/nominations/2004/12/14 - Board Nominations for 2004/12/14
