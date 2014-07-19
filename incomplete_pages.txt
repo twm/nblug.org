@@ -22,6 +22,9 @@ News:
 * http://nblug.org/node/27 - InstallFest [missing date]
 * http://nblug.org/node/32 - General Meeting; Linux clustering at ILM [no
 ** date]
+* http://nblug.org/node/33 - General Meeting; gumstix [missing date]
+* http://nblug.org/node/60 - InstallFest [missing date]
+
 
 Pages:
 
@@ -68,3 +71,4 @@ Nominations/Other:
 * http://nblug.org/hddpledge - 2004 Hard Disk Pledge Drive
 * http://nblug.org/installfest/2004/07/24 - InstallFest [missing date, no
 ** node]
+* http://nblug.org/ifloc - installfest location
