@@ -25,6 +25,7 @@ News:
 * http://nblug.org/node/33 - General Meeting; gumstix [missing date]
 * http://nblug.org/node/60 - InstallFest [missing date]
 * http://nblug.org/node/34 - General Meeting [missing date]
+* http://nblug.org/meeting/2005/11/08/wrt54g.2 - [bad url]
 
 
 Pages:
@@ -67,6 +68,7 @@ Meeting notes:
 * http://nblug.org/board/minutes/20051013 - Board meeting minutes 2005/10/13
 ** [bad url]
 * http://nblug.org/node/77 - Presentation Materials
+* http://nblug.org/board/agenda/20051013 - Board Meeting [bad url]
 
 
 Nominations/Other:
