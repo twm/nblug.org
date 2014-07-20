@@ -16,7 +16,6 @@ http://nblug.org/node/22
 http://nblug.org/node/25
 http://nblug.org/node/36
 http://nblug.org/node/37
-http://nblug.org/node/38
 http://nblug.org/node/39
 http://nblug.org/node/41
 http://nblug.org/node/54
@@ -30,15 +29,11 @@ http://nblug.org/node/64
 http://nblug.org/node/68
 http://nblug.org/node/69
 http://nblug.org/node/70
-http://nblug.org/node/72
-http://nblug.org/node/74
 http://nblug.org/node/75
 http://nblug.org/node/76
 http://nblug.org/node/78
 http://nblug.org/node/79
-http://nblug.org/node/80
 http://nblug.org/node/81
-http://nblug.org/node/82
 http://nblug.org/node/83
 http://nblug.org/node/84
 http://nblug.org/node/85
