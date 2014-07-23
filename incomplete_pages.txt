@@ -34,6 +34,9 @@ News:
 * http://nblug.org/general/2006/10 - Choosing and Tuning Linux File Systems
 ** [bad URL]
 * http://nblug.org/installfest - installfest registration [page]
+* http://nblug.org/node/102 - Installfest: Saturday March 17th, at O'Reilly
+** [references missing /installfest URL]
+* http://nblug.org/node/89 - Multimedia apps [no content]
 
 Pages:
 
@@ -92,6 +95,7 @@ Meeting notes:
 * http://nblug.org/node/95 - Board Meeting Minutes 2006/08/01
 * http://nblug.org/node/99 - Board Meeting Minutes - 12/5/2006
 * http://nblug.org/node/100 - Board Meeting Minutes - 1/4/2007
+* http://nblug.org/node/103 - Board Meeting Minutes - 1/16/2007
 
 
 Nominations/Other:
