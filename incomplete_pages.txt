@@ -37,6 +37,7 @@ News:
 * http://nblug.org/node/102 - Installfest: Saturday March 17th, at O'Reilly
 ** [references missing /installfest URL]
 * http://nblug.org/node/89 - Multimedia apps [no content]
+* http://nblug.org/node/98 - InstallFest [refers to /genloc and /installfest]
 
 Pages:
 
