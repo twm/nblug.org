@@ -29,10 +29,6 @@ http://nblug.org/node/64
 http://nblug.org/node/68
 http://nblug.org/node/69
 http://nblug.org/node/70
-http://nblug.org/node/75
-http://nblug.org/node/76
-http://nblug.org/node/78
-http://nblug.org/node/79
 http://nblug.org/node/81
 http://nblug.org/node/83
 http://nblug.org/node/84
@@ -43,8 +39,6 @@ http://nblug.org/node/88
 http://nblug.org/node/89
 http://nblug.org/node/90
 http://nblug.org/node/91
-http://nblug.org/node/92
-http://nblug.org/node/93
 http://nblug.org/node/94
 http://nblug.org/node/95
 http://nblug.org/node/96

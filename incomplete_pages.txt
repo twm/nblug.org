@@ -26,7 +26,14 @@ News:
 * http://nblug.org/node/60 - InstallFest [missing date]
 * http://nblug.org/node/34 - General Meeting [missing date]
 * http://nblug.org/meeting/2005/11/08/wrt54g.2 - [bad url]
-
+* http://nblug.org/general/2006/09 - VMware Server [bad url]
+* http://nblug.org/node/97 - Installfest: Saturday, October 28th at O'Reilly
+** [not published, story]
+* http://nblug.org/installfest/signup - Installfest Registration [bad url]
+* http://nblug.org/genloc - general meeting location [bad url]
+* http://nblug.org/general/2006/10 - Choosing and Tuning Linux File Systems
+** [bad URL]
+* http://nblug.org/installfest - installfest registration [page]
 
 Pages:
 
@@ -72,6 +79,14 @@ Meeting notes:
 * http://nblug.org/node/80 - Board Meeting [OK to post?]
 * http://nblug.org/installfest/2006/02/25 - InstallFest [bad url]
 * http://nblug.org/node/82 - Board Meeting
+* http://nblug.org/board/minutes/20060206 - Board Meeting [bad URL]
+* http://nblug.org/board/agenda/2006/04 - Board Meeting [bad URL]
+* http://nblug.org/board/minutes/20060404 - Board meeting minutes 2006/04/04
+** [bad URL]
+* http://nblug.org/board/election/2006 - 2006 Board Elections [bad url]
+* http://nblug.org/board/agenda/2006/05 - Board Meeting [bad URL]
+* http://nblug.org/board/minutes/20060605 - Board Meeting Minutes 2006/06/05
+** [bad URL]
 
 
 Nominations/Other:
@@ -83,3 +98,4 @@ Nominations/Other:
 * http://nblug.org/ifloc - installfest location
 * http://nblug.org/node/73 - No Meeting - Feb. 14 meeting moved to Feb. 7 [not
 ** published]
+* http://nblug.org/node/94 - 10th Anniversary!
