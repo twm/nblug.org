@@ -87,6 +87,11 @@ Meeting notes:
 * http://nblug.org/board/agenda/2006/05 - Board Meeting [bad URL]
 * http://nblug.org/board/minutes/20060605 - Board Meeting Minutes 2006/06/05
 ** [bad URL]
+* http://nblug.org/installfest/2006/10/28 - InstallFest [bad url]
+* http://nblug.org/node/96 - Board Meeting Minutes 2006/09/07
+* http://nblug.org/node/95 - Board Meeting Minutes 2006/08/01
+* http://nblug.org/node/99 - Board Meeting Minutes - 12/5/2006
+* http://nblug.org/node/100 - Board Meeting Minutes - 1/4/2007
 
 
 Nominations/Other:
