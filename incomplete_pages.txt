@@ -40,6 +40,9 @@ News:
 * http://nblug.org/node/98 - InstallFest [refers to /genloc and /installfest]
 
 Pages:
+* http://nblug.org/regrequest - User Registration Submitted
+* http://nblug.org/constitution - constitution
+* http://nblug.org/locations - event locations
 
 Meeting notes:
 * http://nblug.org/node/151 - 2009-11-17 board meeting minutes for November 09
