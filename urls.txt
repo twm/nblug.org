@@ -1,9 +1,0 @@
-http://nblug.org/node/2
-http://nblug.org/node/3
-http://nblug.org/node/4
-http://nblug.org/node/6
-http://nblug.org/node/7
-http://nblug.org/node/8
-http://nblug.org/node/9
-http://nblug.org/node/10
-http://nblug.org/node/11
