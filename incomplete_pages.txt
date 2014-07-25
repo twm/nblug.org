@@ -43,6 +43,9 @@ Pages:
 * http://nblug.org/regrequest - User Registration Submitted
 * http://nblug.org/constitution - constitution
 * http://nblug.org/locations - event locations
+* http://nblug.org/boardcontact - Board Contact Page
+* http://nblug.org/installfest/helpers - Information for InstallFest helper
+* http://nblug.org/membership - membership info
 
 Meeting notes:
 * http://nblug.org/node/151 - 2009-11-17 board meeting minutes for November 09
