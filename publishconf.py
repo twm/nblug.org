@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://new.nblug.org'
+SITEURL = 'http://nblug.org'
 RELATIVE_URLS = False
 
 DELETE_OUTPUT_DIRECTORY = True
