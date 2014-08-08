@@ -4,6 +4,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
+# Override this to make the virualenv use a specific Python version (2.7 and
+# 3.4 are known to work).
+SYS_PYTHON?=python
+
 PY=$(CURDIR)/.venv/bin/python
 PELICAN=$(CURDIR)/.venv/bin/pelican
 PELICANOPTS=
@@ -36,7 +40,7 @@ help:
 	@echo '                                                                       '
 
 init:
-	virtualenv --prompt nblug.org .venv
+	virtualenv --python $(SYS_PYTHON) --prompt nblug.org .venv
 	.venv/bin/pip install -r requirements.txt
 
 html:
