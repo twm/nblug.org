@@ -167,7 +167,7 @@ class CalendarGenerator(object):
             if e.errno != errno.EEXIST:
                 raise
 
-        return open(path, 'w')
+        return open(path, 'wb')
 
     def generate_output(self, writer):
         """
