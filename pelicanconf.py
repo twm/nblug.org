@@ -65,7 +65,7 @@ FEED_ALL_ICALENDAR = 'feeds/all.ics'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PLUGIN_PATH = './plugins'
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['drupal_urls', 'event_calendar']
 
 STATIC_PATHS = [
