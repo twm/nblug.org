@@ -78,6 +78,8 @@ ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_HOST):$(SSH_TARGET_DIR)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete \
+		--no-owner --no-group --perms --chmod=D775,F664 \
+		$(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 .PHONY: init html help clean regenerate serve devserver publish ssh_upload rsync_upload
