@@ -49,8 +49,7 @@ For example, ``content/news/2016-11-20-strfry.md``:
 
     Title: Data Security with strfry()
     Tags: general meeting
-    Start: 2016-12-25 7:30 pm
-    End: 2016-12-25 9:00 pm
+    Event: 2016-12-25 7:30 pm to 9:00 pm
     Speaker: Kyle Rankin
     Location: O'Reilly Media
     Author: Alan Cecil
