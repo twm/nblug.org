@@ -75,7 +75,7 @@ publish:
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete \
-		--no-owner --no-group --perms --chmod=D775,F664 \
+		--no-owner --no-group --perms --chmod=Du+rwx,g+rwx,o+rx,Fu+rw,g+rw,o+r \
 		$(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 .PHONY: init html help clean regenerate serve devserver publish rsync_upload
