@@ -15,7 +15,7 @@ A huge thank you to O'Reilly for all they have offered our North Bay Linux User 
 Directions on how to attend our meetings:
 
 Our meeting room at O'Reilly is located at 1005 Gravenstein Highway North in Sebastopol.
-[Yahoo Maps][1] to see location or [Enter a starting address and get directions][2].
+[Yahoo! Maps][1] to see location or [Enter a starting address and get directions][2].
 
 [1]: http://maps.yahoo.com/py/maps.py?BFCat=&Pyt=Tmap&newFL=Use+Address+Below&addr=1005+Gravenstein+Highway+North&csz=Sebastopol%2C+CA&Country=us&Get%A0Map=Get+Map
 [2]: http://maps.yahoo.com/py/ddResults.py?Pyt=Tmap&tarname=&tardesc=&tarhash=&taraddr=1005+Gravenstein+Highway+North&tarcsz=Sebastopol,+CA+95472-4532&newtcountry=us&newcountry=us&doit=1
