@@ -11,4 +11,5 @@ Our speaker writes:
 > This talk has nothing to do with Linux directly.
 > I intend to talk some about the sessions I attended, but more about the concept of Open Conferences in general.
 
-The presentation will be followed by discussion of this month's developments: shellshock, etc.
+The presentation will be followed by nominations for NBLUG's upcoming elections and discussion of this month's developments: shellshock, etc.
+All positions are up for election and are listed in the [bylaws](/bylaws/).
