@@ -13,3 +13,5 @@ including certificate and key management, protecting secrets on your hosts,
 managing dynamic IPs, and overall security best practices. While a few tips
 will be specific to Puppet and Amazon AWS, most of the techniques would
 apply in just about any environment.
+
+Update: Kyle's slides can be found [on his web site](http://greenfly.org/talks/security/secure_server_deployments.html).
