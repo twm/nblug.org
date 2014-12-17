@@ -70,6 +70,7 @@ PLUGINS = ['drupal_urls', 'event_calendar']
 
 STATIC_PATHS = [
     'static/htaccess',
+    'static/favicon.ico',
     'static/robots.txt',
     'static/humans.txt',
 ]
@@ -77,4 +78,5 @@ EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
     'static/humans.txt': {'path': 'humans.txt'},
     'static/htaccess': {'path': '.htaccess'},
+    'static/favicon.ico': {'path': 'favicon.ico'},
 }
