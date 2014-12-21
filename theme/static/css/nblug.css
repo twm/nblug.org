@@ -81,6 +81,21 @@ main {
     margin: 1em 0;
 }
 
+.image-right {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media all and (min-width: 700px) {
+    .image-right {
+        float: right;
+        clear: right;
+        margin: 0 0 1em 1em;
+    }
+}
+
 @media all and (max-width: 500px) {
     main {
         float: none;

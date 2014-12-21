@@ -12,7 +12,15 @@ If offering us space for meetings is not enough, they also donate books to our L
 (Woohoo!)
 A huge thank you to O'Reilly for all they have offered our North Bay Linux User Group.
 
-Directions on how to attend our meetings:
+## Directions
+
+<img class="image-right" alt="A photo of the approach to O'Reilly Media's building.  There is a small O'Reilly sign at the edge of the road."
+    width="250" width="247"
+    src="/images/oreilly-sign.250px.jpg"
+    sizes="250px"
+    srcset="/images/oreilly-sign.250px 250w,
+            /images/oreilly-sign.500px 500w,
+            /images/oreilly-sign.1000px 1000w">
 
 Our meeting room at O'Reilly is located at 1005 Gravenstein Highway North in Sebastopol.
 [Yahoo! Maps][1] to see location or [Enter a starting address and get directions][2].

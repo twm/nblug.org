@@ -69,6 +69,7 @@ PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['drupal_urls', 'event_calendar']
 
 STATIC_PATHS = [
+    'images',
     'static/htaccess',
     'static/favicon.ico',
     'static/robots.txt',
