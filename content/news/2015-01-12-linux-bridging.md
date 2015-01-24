@@ -13,3 +13,5 @@ The goal of this talk is to give the Linux Sysadmin the understanding needed to 
 
 Robert Harker is a [Linux|UNIX] greybeard sysadmin and one of the first Sun sysadmins.
 His interests include OS/application configuration management of scaling of server farms with a particular interest in verification of deployments: "How do you know it is correct and running?"
+
+Update: [Slides available online](http://harker.com/Talks/linux-bridging/)
