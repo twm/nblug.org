@@ -10,3 +10,5 @@ Drupal_Node: 197
 Tom Most will be presenting "An Introduction to Debian Packaging". This talk is aimed at developers and system administrators who wish to deploy applications to Debian and Ubuntu systems. Topics include the structure of a .deb, writing ``debian/control`` files, and use of debhelper and dh_make.
 
 Comment from Allan: This should be of interest to anyone who uses a distribution that relies on .deb package management. See you there!
+
+Update: [Slides available](http://freecog.net/2014/intro-debian-packaging.pdf).
