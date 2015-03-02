@@ -42,6 +42,8 @@ Don't forget to commit your changes to the git repo!
 
 ## Adding Events
 
+TL;DR run ``./add-talk.py``.
+
 All of the events are stored as text Markdown files in``content/news/``.
 These files start with a metadata header in which we place some NBLUG-specific data about the speaker time of the presentation.
 A blank line follows this header, then the talk description in Markdown format (which may include embedded HTML if necessary).
@@ -65,6 +67,8 @@ The ``Tags`` field should contain one of these values:
  * board meeting
 
 In the filename "2016-11-20" is today's date, when this notice is posted.
+
+The script ``./add-talk.py`` automatically generates a general meeting news item for the next talk date (second Tuesday of the month) based on answers given at an interactive prompt.
 
 ## Migrating Pages from the Old Site
 
