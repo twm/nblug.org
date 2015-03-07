@@ -54,8 +54,9 @@ def next_second_tuesday(today):
 
 def main():
     title = raw_input("What is the title of the talk? ")
+    default_talk_date = next_second_tuesday(date.today())
     talk_date = raw_input("What's the date of the talk? [{}] ".format(
-        next_second_tuesday(date.today())))
+        default_talk_date)) or default_talk_date
     speaker = raw_input("Who's the speaker? ")
     author = raw_input("What is *your* name? ")
 
