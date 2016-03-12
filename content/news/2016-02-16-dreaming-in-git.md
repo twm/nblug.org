@@ -13,3 +13,5 @@ Git's inner world to confirm our understanding.  This is not an
 introduction to Git; it targets a developer who can commit, branch,
 and merge with Git.  Although I'll show example commands and output,
 consider bringing a laptop with Git installed so you can type along.
+
+Update: Marcel’s <a href="http://oak.homeunix.org/~marcel/nblug-git/">slides are now available online</a>
