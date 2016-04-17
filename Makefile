@@ -74,8 +74,10 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete \
-		--no-owner --no-group --perms --chmod=Du+rwx,g+rwx,o+rx,Fu+rw,g+rw,o+r \
+	rsync -e "ssh -p $(SSH_PORT)" -i -rvz --delete \
+		--exclude 10 \
+		--groupmap=*:nblug \
+		--chmod=D01775,F0664 \
 		$(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 .PHONY: init html help clean regenerate serve devserver publish rsync_upload
