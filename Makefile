@@ -75,7 +75,6 @@ publish:
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -i -rvz --delete \
-		--exclude 10 \
 		--groupmap=*:nblug \
 		--chmod=D01775,F0664 \
 		$(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
