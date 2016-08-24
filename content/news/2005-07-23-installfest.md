@@ -1,17 +1,17 @@
 Title: InstallFest
 Tags: installfest
-Event: 2005-09-17 7:30 pm to 9:00 pm
+Event: 2005-07-23 10:30 am to 4:30 pm
 Speaker: None
 Location: O'Reilly Media
 Author: Eric Eisenhart
-Drupal_Node: 61
-Slug: installfest-2005-09
+Drupal_Node: 60
+Slug: installfest-2005-07
 
 ### Description:
 
 Please note that this InstallFest is at O'Reilly in Sebastopol. Please see below for information on the exact location and directions.
 
-WHEN:  Saturday, September 17th - 10:30AM - 4:30PM PDT<br>
+WHEN:  Saturday, July 23 - 10:30AM - 4:30PM PDT<br>
 WHERE: O'Reilly in Sebastopol; http://nblug.org/genloc<br>
 WHO:   Anyone wanting help in installing Linux onto their computer<br>
 URL:   http://nblug.org/installfest/<br>
