@@ -74,7 +74,7 @@ The script ``./add-talk.py`` automatically generates a general meeting news item
 
 When migrating pages from the Drupal site, an additional metadata field can be used to make sure the page shows up with the same URL:
 
-    Druapl_Node: <number>
+    Drupal_Node: <number>
 
 You can get this value from the URL of the page, which will look something like this:
 

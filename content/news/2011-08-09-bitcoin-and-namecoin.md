@@ -1,7 +1,6 @@
 Title: Bitcoin and Namecoin
 Tags: general meeting
-Start: 2011-08-09 7:30 pm
-End: 2011-08-09 9:00 pm
+Event: 2011-08-09 7:30 pm to 9:00 pm
 Speaker: Allan Cecil
 Location: O'Reilly Media's Tarsier conference room
 Author: Glenn Kerbein
