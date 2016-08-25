@@ -1,5 +1,7 @@
 # NBLUG.org
 
+[![Build Status](https://travis-ci.org/twm/nblug.org.svg?branch=master)](https://travis-ci.org/twm/nblug.org)
+
 This is the nblug.org web site.
 It's static HTML, built from [Markdown][markdown] files in the ``content/`` directory using [Pelican][pelican].
 
