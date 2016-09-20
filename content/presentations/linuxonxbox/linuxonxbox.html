@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Using an Xbox as a MythTV Frontend</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.2a2" />
+<meta name="author" content="Allan Cecil" />
+
+<!-- configuration parameters -->
+<meta name="defaultView" content="presentation" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/mythtux/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.imgcon {width: 525px; margin: 0 auto; padding: 0; text-align: center;}
+#anim {width: 270px; height: 320px; position: relative; margin-top: 0.5em;}
+#anim img {position: absolute; top: 42px; left: 24px;}
+img#me01 {top: 0; left: 0;}
+img#me02 {left: 23px;}
+img#me04 {top: 44px;}
+img#me05 {top: 43px;left: 36px;}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>NBLUG | 2006-03-14</h1>
+<h1>Using an Xbox as a MythTV Frontend</h1>
+</div>
+</div>
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Using an Xbox as a MythTV Frontend</h1>
+<h2>Or how to put Linux where Microsoft never intended it to go</h2>
+<h3>Allan Cecil</h3>
+</div>
+
+<div class="slide">
+<h1>Welcome!</h1>
+<br />
+<ul>
+<li>This presentation was given at <a href="http://www.nblug.org">NBLUG.org</a> on 3-14-2006.</li>
+<li>Since you're viewing this online, you'll probably want to swith to Outline mode, which will show you a large number of notes and hyperlinks that are not visible in Presentation mode.</li>
+<li>To switch viewing modes at any time, Press "T" or move your mouse to the lower right corner and click on the "<code>0</code>" button.</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Covered in this talk:</h1>
+<ul class="incremental">
+<li>(original) Xbox hardware and software overview</li>
+<li>Legal questions</li>
+<li>Xbox modification methods</li>
+<li>Live demonstration of software modification</li>
+<li>Linux distributions and installation</li>
+<li>MythTV frontend configuration and use</li>
+<li>Other homebrew software</li>
+</ul>
+</div>
+</div>
+<div class="notes">
+    <br />Notes:<br />
+Sections that are only visible in this outline / handout mode will have Notes: as the first line.  As noted, these sections contain additional information, hyperlinks, and commentary that isn't viewable in presentation mode.</div>
+
+<div class="slide">
+<h1>What is an Xbox?</h1>
+<ul>
+<li>733 MHz Intel Pentium III (128k L2 cache)</li>
+<li>64 MB RAM, shared with video</li>
+<li>nVidia GeForce 3 MX</li>
+<li>8 or 10 GB hard drive, 5 FATX partitions</li>
+<li>10/100 network adapter</li>
+<li>DVD-ROM drive (various models)</li>
+<li>Controller Ports: 4 proprietary USB ports</li>
+</ul>
+</div>
+<div class="notes">
+Notes:
+<ul>
+<li>The processor has an 8-way associative cache like P-III E (better than Celeron's 4-way)</li>
+<li>The nVidia graphics chipset is really an NV2A chipset at 233 MHz (2 vertex shaders)</li>
+<li>Other info: 133 MHz FSB, 200 MHz memory</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>What can I do with an Xbox?</h1>
+<h2>Unmodded:</h2>
+<ul>
+<li>Run the Microsoft Dashboard</li>
+<ul>
+<li>the dashboard is essentially the console's GUI</li>
+</ul>
+<li>Play signed Xbox games</li>
+<ul>
+<li>restricted to original media</li>
+</ul>
+<li>Play on Xbox live</li>
+<ul>
+<li>requires a subscription</li>
+<li>may change or update files without your permission</li>
+</ul>
+<li>Run arbitrary code using a software exploit</li>
+<ul>
+<li>returns to normal after reboot</li>
+<li>not effective for long-term use</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+The dashboard is what you see when you boot up an Xbox without a disc in the drive.  It's usually replaced with a different non-Microsoft dashboard when modding an Xbox to allow for more features.  A few mods simply augment the standard menu or replace the Xbox Live menu item with something else.<br />
+Regarding Xbox live:  Microsoft has been known to upgrade files in the past to break and/or prevent software exploits.  The current batch of software exploits work just fine and cannot be prevented by Microsoft at this time (more information on why is available <a href="http://www.xbox-linux.org/wiki/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System">here</a>).
+If you do happen to log in to Xbox live with a modded Xbox, your Xbox will be banned based on the hard drive and the serial number, and your account will be banned with your remaining subscription revoked.
+</div>
+
+
+<div class="slide">
+<h1>What can I do with an Xbox?</h1>
+<h2>Fully Modded:</h2>
+<ul>
+<li>Run signed or unsigned Xbox .XBE applications, like:</li>
+<ul>
+<li>Dashboard replacements</li>
+<li>Original (backup) games from any source</li>
+<li>Linux distributions</li>
+<li>Homebrew software</li>
+<li>An Xbox is an x86 PC - the possibilities are endless</li>
+</ul>
+<li>May not have access to Xbox live depending on mod used, but free alternatives exist:</li>
+<ul>
+<li>XLink Kai</li>
+<li>XBConnect</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+An .XBE file is, in essence, an XBox Executable (hence, .XBE).  You can read about the <a href="http://www.xbox-linux.org/wiki/XBE_File_Format">technical specifications</a> of .XBE files if you want, but in general just think of .XBE files as .EXE files for the Xbox.<br />
+On Microsoft games, signing happens under Microsoft's strict control, with each game signed with a 2048-bit private key.  An unmodded Xbox will not run content that is not signed.  Jumping ahead a bit, the xbox-linux.org MechInstaller will only run .XBE files that have been signed by either Microsoft or by a specific private key, as described in the middle of <a href="http://www.xbox-linux.org/wiki/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System">this article</a>.  Other Xbox modification methods allow for execution of any code, be it signed or unsigned - i.e. "fully modded".<br />
+Both <a href="http://www.teamxlink.co.uk/">Xlink Kai</a> and <a href="http://www.xbconnect.com">XBConnect</a> have similar features, with Xlink Kai covering a few more platforms.  At this time, neither of them charge a subscription fee, so there are other reasons to consider using one of these services (which can work even without using a modded Xbox).
+</div>
+
+<div class="slide">
+<h1>So, is this legal?</h1>
+<ul>
+<li>Yes, but keep the following in mind:</li>
+<ul>
+<li>It's your Xbox - you can do what you like with it per sect. 1201(f) of the DMCA</li>
+<li>Microsoft licenses their Xbox Dev Kit - they can do what they like with it per their license agreement</li>
+</ul>
+<li>What does this mean?</li>
+<ul>
+<li>Running an unsigned .XBE file is legal</li>
+<li>Creating an unsigned .XBE file with OpenXDK is legal</li>
+<li>Creating an unsigned .XBE file with the MS XDK probably isn't</li>
+</ul>
+<li>For this reason, distribution of unsigned .XBE files is problematic</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+I am not a lawyer - please consult one if you are worried about legality in your jurisdiction.<br />
+More information on the DMCA can be found on the <a href="http://en.wikipedia.org/wiki/DMCA_1201">Wikipedia entry</a> on the subject.  You can also parse <a href="http://www4.law.cornell.edu/uscode/html/uscode17/usc_sec_17_00001201----000-.html">section 1201</a> of the DMCA yourself or read the <a href="http://www.eff.org/">EFF</a>'s article on the <a href="http://www.eff.org/IP/DMCA/unintended_consequences.php">unintended consequences of the DMCA</a>.
+</div>
+
+
+<div class="slide">
+<h1>Primary online resources</h1>
+<ul>
+<li><a href="http://xbox-linux.org">http://xbox-linux.org</a></li>
+<ul>
+<li>Lots of information on Xbox-specific distributions</li>
+<li>Articles on Xbox design choices, including how MS introduced 3 security flaws into 512 bytes of code</li>
+</ul>
+<li><a href="http://xbox-scene.org">http://xbox-scene.org</a></li>
+<ul>
+<li>One of the most active Xbox modding sites</li>
+<li>Contains information on locating homebrew software and
+dashboards</li>
+</ul>
+<li><a href="http://xbins.org">http://xbins.org</a></li>
+<ul>
+<li>Full list of homebrew software</li>
+<li>Hosts fabled xbins FTP server</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+A quick summary of links are listed at the end of this presentation.<br />
+The article about the 512-byte hidden boot code that contained three separate bugs can be found <a href="http://www.xbox-linux.org/wiki/The_Hidden_Boot_Code_of_the_Xbox">here</a>.<br />
+If you have any problems connecting to the Xbins FTP server, take a look at <a href="http://www.xbox-scene.com/articles/xbins.php">the Xbins guide</a> over at xbox-scene.org or at any of the other <a href="http://www.i-hacked.com/content/view/87/62/">guides</a> on the <a href="http://forums.afterdawn.com/thread_view.cfm/203285">subject</a>.
+</div>
+
+<div class="slide">
+<h1>What mod methods exist?</h1>
+<h2>Hardware:</h2>
+<ul>
+<li>Pros:</li>
+<ul>
+<li>Wide variety of physical modchips</li>
+<li>Some come in solderless packages</li>
+<li>Can come with on/off switches to turn off mod</li>
+<li>Drive management - HD does not have to be locked</li>
+</ul>
+<li>Cons:</li>
+<ul>
+<li>Requires opening case, voids warranty</li>
+<li>Solder-based modchips may not be for the faint of heart</li>
+<li>Modchips must be purchased and shipped</li>
+<li>Onboard TSOP flashing is possible but risky</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+If you're interested in a hardware modchip, <a href="http://www.xbox-scene.org">xbox-scene.org</a> is a good place to start as there are a good number of modchip reviews there. You might also find the <a href="http://www.xbox-scene.org/modchips4_table.htm">Generation 4 modchip comparison chart</a> or the historical <a href="http://www.xbox-scene.org/modchips3b_table.htm">Generation 3 chart</a> useful.
+</div>
+
+<div class="slide">
+<h1>What mod methods exist?</h1>
+<h2>Software:</h2>
+<ul>
+<li>Pros:</li>
+<ul>
+<li>Free</li>
+<li>Does not require opening case</li>
+<li>Functionally identical to a hardware mod</li>
+<li>Can be reverted, does not void warranty</li>
+<li>xboxhdm can be used to create and lock a larger HD</li>
+</ul>
+<li>Cons:</li>
+<ul>
+<li>Have to obtain specific game title, exploit package</li>
+<li>Copying savegame exploit to Xbox may be difficult</li>
+<li>HD has to be locked, but there's no size limit</li>
+<li>Xbox live support varies by mod used, arms race</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+You can find out more information about hard drive locking and compatibility at the <a href="http://xboxdrives.x-pec.com/">Xbox Hard Drive Compatibility Chart</a> site.<br />
+<a href="http://x-scene.com/software/software.php?page=linux#newsitemEplkFAkkAyphdSfGCP">Xboxhdm</a> is one very cool piece of software made by ldots.  After modding an Xbox, an eeprom.bin file is usually generated. You can copy this file into a folder and then use a Linux script (or a batch file) to create an .ISO file that's specific to that Xbox.  After booting from the disc, you'll find yourself in Linux along with a very nice script that automates creating a drive from scratch, including using any space larger than 8 GB as an extra user data partition.  The drive can then locked (or unlocked) based on information from the eeprom.bin file you included when you made the disc.  There are a <a href="http://xguides.xbox-scene.com/tikiwiki/tiki-index.php?page=XBoxHDM">wide</a> <a href="http://xguides.xbox-scene.com/tikiwiki/tiki-index.php?page=XBOXHDM%20for%20dummies">variety</a> of <a href="http://forums.xbox-scene.com/index.php?showtopic=244043">guides</a> on using xboxhdm available online.
+</div>
+
+<div class="slide">
+<h1>Softmodding 101</h1>
+<h2>OK, softmod it is.  Which savegame exploit should I use?</h2>
+<ul>
+<li>xbox-linux.org Mechinstaller</li>
+<ul>
+<li>Not made with MS XDK, can use clean BIOS</li>
+<li>Only launches specific signed Linux .XBE files</li>
+<li>Outdated, removes Xbox live, has clock-loop problem</li>
+</ul>
+<li>ldots UDE / UXE installer</li>
+<ul>
+<li>Works on all Xbox versions (v1.0 - v1.6)</li>
+<li>Boots to a recovery dashboard if tray is open</li>
+<li>Allows execution of signed and unsigned .XBE files</li>
+<li>Easy to install, but requires disc to reapply</li>
+</ul>
+<li>Other installers exist, newest ones support Xbox live</li>
+<ul>
+<li>Ndure XBE Exploit - open tray suppresses mod</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+Despite being very outdated and harder than newer mods to use, the <a href="http://www.xbox-linux.org/wiki/Software_Method_HOWTO">MechInstaller</a> software mod from <a href="http://www.xbox-linux.org">xbox-linux.org</a> may be more appropriate (for distribution reasons) if all you intend to do is run Linux on your Xbox and you're not interested in any other software.  There are also ways to <a href="http://www.xbox-linux.org/wiki/Getting_Started#15">remove gaming abilities completely</a>, although I'm not sure why you would want to do that.<br />
+While there are newer softmod packages out there, I still like the <a href="http://forums.xbox-scene.com/index.php?showtopic=227528">ldots softmod</a> package.  This is mostly because I've come to trust it and it's really easy to install.  There are a few other <a href="http://forums.afterdawn.com/thread_view.cfm/203285">guides</a> out there for this particular method, too.<br />  That being said, newer softmods come out from time to time - use whatever softmod you want.
+The <a href="http://xguides.xbox-scene.com/tikiwiki/tiki-index.php?page=Ndure+XBE+Exploit">Ndure</a> exploit is a bit more difficult to install, but it has the advantage that it includes code to automatically swap out the exploited files with the real ones to allow access to Xbox live without getting banned.  So far, Microsoft has not detected or blocked this, but as noted, there has been a continuing arms race between Microsoft and softmod developers.  I still suggest avoiding the mess entirely by using either <a href="http://www.teamxlink.co.uk/">Xlink Kai</a> or <a href="http://www.xbconnect.com">XBConnect</a>.
+</div>
+
+<div class="slide">
+<h1>Softmodding 101</h1>
+<ul>
+<li>After picking a softmod exploit, you will need:</li>
+<ul>
+<li>MechAssault, 007, or Splinter Cell depending on mod</li>
+<ul>
+<li>Can be borrowed / rented if you don't intend to revert mod or if you use a newer exploit</li>
+</ul>
+<li>A memory unit or supported USB key to copy the savegame</li>
+</ul>
+<li>Savegame can be copied from:</li>
+<ul>
+<li>A friend's modded Xbox via a memory unit</li>
+<li>A USB key connected to the Xbox using a modified USB cable</li>
+<li>A computer using a controller cable adapter and ActionReplay</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+Obviously, the easiest way to copy a savegame exploit is to find someone nearby who has a modded Xbox that you can copy it from.<br />
+Your other two options involve buying or hacking together a cable to either get an Xbox controller on your PC or a USB key on your Xbox.  If you're going the controller-connected-to-the-computer method, you can buy one of <a href="http://www.lik-sang.com/info.php?category=55&amp;products_id=2701&amp;">several</a> <a href="http://www.electricquarter.com/xboxcont.htm">models</a> <a href="http://www.kanection.co.uk/product.php/494/0/">available</a> or you can <a href="http://www.xbox-scene.com/articles/xbox-usb-xbox-cable.php">roll</a> <a href="http://www.llamma.com/xbox/Mods/xbox_controller_to_pc_usb.htm">your</a> <a href="http://www.xbox-scene.com/articles/xbox-usb-xbox-cable.php">own</a>.<br />
+If you want to go the other way around and connect USB devices to your Xbox, there are (you guessed it) <a href="http://www.xbox-linux.org/wiki/Xbox_Linux_USB_HOWTO">several</a> standard <a href="http://www.xbox-scene.com/articles/xbox-usb-xbox-cable.php">guides</a> as well as a couple more that take this method in an <a href="http://mesh.typepad.com/blog/2005/01/creating_a_usb_.html">interesting</a> <a href="http://www.command-tab.com/2005/11/14/xbox-usb-adapter/">direction</a>.<br /> 
+The controller-connected-to-the-computer method is described <a href="http://xguides.xbox-scene.com/tikiwiki/tiki-index.php?page=Using+a+USB+Stick+to+Transfer+Gamesaves">here</a>, but keep in mind it requires Windows (although it may be possible to run the Action Replay software required for this method using newer versions of Wine).<br />
+If that doesn't suit your needs, you can go with the USB key method described on <a href="http://www.xbox-linux.org/wiki/Software_Method_HOWTO#Copying_the_MechInstaller_Files_on_a_USB_Memory_Stick">this xbox-linux.org</a> page.  Keep in mind that not all keys can be recognized by an Xbox - check out the <a href="http://www.xbox-linux.org/wiki/Xbox_USB_Compatibility_List">USB key compatibility list</a> to see what works and what doesn't.  The tool itself only supports specific sizes of USB keys, so you may find a barrier there as well.  I'd suggest only trying this method if nothing else works for you.
+</div>
+
+<div class="slide">
+<h1>Softmodding 101</h1>
+<h2>OK, let's mod it!  Stable MechAssault-based ldots mod:</h2>
+<ul>
+<li>Get ldots 1.7 (or 1.8) + ltools dashes savegame packages</li>
+<li>After copying savegame packages to Xbox, launch MechAssault, open campaigns and select Run Linux</li>
+<li>To make permanent, select UDE / UXE install and choose:</li>
+<ul>
+<li>PBL Metoo patcher, Evox M8 BIOS, Avalaunch dashboard, generic fonts, enable tray-state</li>
+</ul>
+<li>Mod is complete once power light flashes green</li>
+<li>Remove the disc and reboot to your new dashboard</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+As noted previously, you can find more information on <a href="http://forums.xbox-scene.com/index.php?showtopic=227528">the ldots</a> savegame package at <a href="http://www.xbox-scene.org">xbox-scene.org</a>.  You may also want to search around there for more information on all this "PBL Metoo" Phoenix BIOS Loader stuff.<br />
+On version 1.6 Xbox units, the screen will end up turning completely green as soon as you start the modding process.  This is because of a problem with the graphics chip used in the 1.6 Xbox units (previous Xbox versions do not suffer from this problem).  The light on the front flashes green when the mod is done so you know it's safe to turn off the Xbox.  It could take several minutes to back up your system files and perform the mod, so be patient.
+</div>
+
+<div class="slide">
+<h1>Post-mod layout</h1>
+<h2>It's modded!  Here's what to look at next:</h2>
+<ul>
+<li>Configure network, update dashboard as needed</li>
+<li>FTP Server is now live: User xbox, password xbox</li>
+<li>Xbox DVD-ROM and HD FATX partition letters are:
+<ul>
+<li>C: = System, 500 MB</li>
+<li>D: = DVD-ROM</li>
+<li>E: = User data, 4.8 GB - bigger HD's span to F:</li>
+<ul>
+<li>Installing software is as easy as copying it (via FTP) to a folder on either E: or F:</li>
+<li>Apps to \Apps, Emulators to \Emulators, Games to \Games</li>
+</ul>
+<li>X:, Y:, Z: = swap, 700 MB each</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+Copying applications is easy - if you have, say, an Amiga emulator for the Xbox, all you need to do is copy the folder using FTP to the \Emulators folder (on either the E: or the F: drive) and reboot the Xbox.  Avalaunch should display the emulator in the Emulators folder.<br />
+Speaking of games, if you do manage to put a bigger hard drive in your Xbox, you can back up your games to the hard drive.  This is nice for a couple of reasons - namely, you don't have to lug a bunch of discs around that can get scratched up and stop working, but also of note is the faster loading times when playing games stored on the hard drive.  In general, <a href="http://dvd2xbox.xbox-scene.com/">DVD2Xbox</a> is the utility of choice for this kind of thing.  In the US, you may be allowed to make a backup of a title you legally own but as always do a quick search if you have any legality questions.
+</div>
+
+<div class="slide">
+<h1>Post-mod layout</h1>
+<h2>Many options in Avalaunch can be edited in settings, or:</h2>
+<ul>
+<ol>
+<li>Open FTP session, copy e:\dashboard\avalaunch.xml</li>
+<li>Launch your favorite text editor and read the comments</li>
+<li>Menu items can be added to a list and look like:</li><br />
+<ul>
+<code>&#060;item name="Microsoft Dashboard" path="C:\msdash.xbe"/&#062;</code>
+</ul>
+<li>When done, FTP the file back to the Xbox and reboot</li>
+</ol>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Pick a Linux distro</h1>
+<h2>Many exist, but these are the most popular:</h2>
+<ul>
+<li>Xebian</li>
+<ul>
+<li>Straight Xbox version of Debian Unstable</li>
+<li>Very good install scripts, well supported</li>
+</ul>
+<li>Gentoox</li>
+<ul>
+<li>Based on Gentoo distribution and mentality</li>
+<li>Magic package management system eases maintenance</li>
+</ul>
+<li>Newcomer: xUbuntu</li>
+<ul>
+<li>Ubuntu 5.10 with Xfce4 (xUbuntu name may change)</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+For a full list of available Xbox-specific Linux distributions, have a look at the <a href="http://www.xbox-linux.org/wiki/Download">Downloads page</a> at xbox-linux.org.
+</div>
+
+<div class="slide">
+<h1>Install a Linux distro</h1>
+<h2>Each one installs differently.  In Xebian:</h2>
+<ul>
+<li>Read xbox-linux.org's Xebian install HOWTO</li>
+<li>Burn the correct .ISO to DVD media, load, and boot</li>
+<li>Default root password is "xebian"</li>
+<li>Use virtual keyboard or SSH to run XBOXLinuxInstall</li>
+<li>Best target is probably E: "game partition" loopback file</li>
+<li>Once installed, run from HD by launching E:\debian\default.xbe</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+The <a href="http://www.xbox-linux.org/wiki/Xebian_HOWTO">Xebian installation HOWTO</a> is really the best document to read when attempting to install Xebian on an Xbox.<br />
+Because the ldots savegame exploit was used in this mod example, a replacement dashboard in the form of Avalaunch was installed.  You'll probably want to edit avalaunch.xbe to create a menu item for e:\debian\default.xbe so you don't have to go through the file manager to launch it.  If you run the MechInstaller softmod, Linux will be your only option - it should show up in the Microsoft Dashboard as Run Linux in the spot normally reserved for Xbox live.
+</div>
+
+<div class="slide">
+<h1>Install MythTV-frontend</h1>
+<h2>Again, each distro is different.  In Xebian:</h2>
+<ul>
+<li>Read xbox-linux.org's MythTV on Xebian HOWTO</li>
+<li>add listed repositories to /etc/apt/sources.list:</li><br />
+<code>deb http://alexfisher.me.uk/debian sarge main<br />
+deb ftp://ftp.nerim.net/debian-marillat/ sarge main</code>
+<li>run apt-get update &amp; apt-get install mythtv-frontend</li>
+<li>Set up remote with lirc - HOWTO has sample config</li>
+<li>Launch mythtv-frontend to see initial configuration</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+As with the Xebian install, I highly advise looking at the <a
+href="http://www.xbox-linux.org/wiki/MythTV_on_Xebian_HOWTO">MythTV on Xebian HOWTO</a> for full instructions on getting the MythTV frontend installed in Xebian.  In particular, you'll probably want to install and configure lirc for remote control support using the sample lirc configuration file listed in the HOWTO.
+</div>
+
+<div class="slide">
+<h1>Using MythTV-frontend</h1>
+<h2>Now that everything's installed, have a look around!</h2>
+<ul>
+<li>The frontend generally works like a normal PC frontend, so check out mythtv.org for usage info (or if you still need to configure a MythTV backend)</li>
+<li>Change settings to enable LED light status (red = recording)</li>
+<li>Consider adding other modules, like MythWeather or MythBrowser (use apt-get)</li>
+<li>With the proper decoders installed, playing DVD's is possible</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+Speaking of the MythTV backend, you'll note I didn't include much information about installing it here.  That's mostly because it can be a bit daunting and would be hard to cover adequately here.  As noted, check out the <a href="http://www.mythtv.org/">MythTV</a> homepage as a starting point on getting the MythTV backend installed.  I found the guide for <a href="http://s91928265.onlinehome.us/hfamily/mythtv/myth_ubuntu.html">installing MythTV on Ubuntu 5.10</a> very helpful, especially since I had a PVR-150 capture card.  A quick search with the name of your distribution plus the word MythTV using your favorite search engine should provide a link to a useful HOWTO.  If you don't have a distribution of choice or if you plan on using a different computer for your MythTV backend, you may want to look into using <a href="http://www.mysettopbox.tv/knoppmyth.html">KnoppMyth</a> to make the installation and configuration process easier.
+</div>
+
+<div class="slide">
+<h1>Other Linux usage ideas</h1>
+<ul class="incremental">
+<li>Xebian = Debian Unstable - do anything you would do on a 733 MHz PC with 64 MB RAM</li>
+<li>Buy a VGA adapter, hack together a USB adapter cable, connect a USB keyboard with a USB port for a mouse, and use it as a desktop PC</li>
+<li>Low power consumption - use as a light-duty server?</li>
+<li>Beowulf cluster?</li>
+<ul>
+<li>Probably impractical, but fun!</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+If you do want a VGA adapter, <a href="http://www.x2vga.com/">these guys</a> seem to have one of the better models available.<br />
+Impractical or not, AnandTech did make a <a href="http://www.anandtech.com/linux/showdoc.aspx?i=2271">Beowulf cluster using 8 Xbox units</a>.  At the very least, the article makes for an interesting read.
+</div>
+
+<div class="slide">
+<h1>Other Homebrew software</h1>
+<h2>There are a lot of great apps out there!</h2>
+<ul>
+<li>Have a look around xbox-scene.org or xbins.org</li>
+<ul>
+<li>Tools exist for backing up original games</li>
+<li>Many emulators exist, including Amiga and C-64</li>
+<li>Homebrew games and classics, like DoomX and QuakeX</li>
+</ul>
+<li>Xbox Media Center - the killer homebrew app</li>
+<ul>
+<li>Plays and streams anyting MPlayer can handle</li>
+<li>Uses Python, has extensive scripting support</li>
+<li>A MythTV-frontend Python script exists</li>
+<li>Look at the feature list at xboxmediacenter.com</li>
+</ul>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+The part about there being quite a few Emulators out there isn't a joke - take a quick look at the <a href="http://xport.xbox-scene.com/">Xport project</a> hosted at xbox-scene.org to get a good idea of what's out there.
+</div>
+
+<div class="slide">
+<h1>MythTV in Xbox Media Center</h1>
+<ul>
+<li>Installing and using XBMCMythTV:</li>
+<ul>
+<li>get from xbmcmythtv.sf.net and copy to \XBMC\Scripts</li>
+<li>Share MythTV capture directory with Samba so xbmcmythtv can see programs, live TV feed</li>
+<li>Script provides most of the features of the full client but with a shorter boot time</li>
+</ul>
+<li>Works by accessing MPEG files directly and using XBMC's built-in file playing capabilities</li>
+<li>XBMC can throttle case fan, power down HD for quiet viewing</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+XBMC is interesting for a large number of reasons, most of which involve the fact that it has quite a few more features than <a href="http://www.xboxspace.com/50226711/xbmc_vs_xbox_360.php">Microsoft's offering</a>, as the previous link shows in a side-by-side comparison.  There's a <a href="http://www.xboxmediacenter.com/info_project.htm">feature list</a> at the <a href="http://www.xboxmediacenter.com">XBMC homepage</a> that should give you an idea of what file formats are supported and what features are implemented.<br />
+XBMC is still a very active project. Binary CVS versions of XBMC pop out all the time, so keep an eye out for them.  The CVS releases usually contain a decent number of features that aren't yet included in the most recent stable release (which, of course, has the benefit of being more stable, but there's a trade-off to everything).<br />
+Speaking of CVS, the CVS versions of <a href="http://sourceforge.net/projects/xbmcmythtv">XBMCMythTV</a> have a few more features than the stable release.  You may need to use the CVS version if you're using a very recent version of the MythTV backend that the released versions of XMBCMythTV hasn't fully caught up with yet.  XBMCMythTV is still in a beta state, but it's very interesting in what it can do  and how it manages to do it.
+</div>
+
+<div class="slide">
+<h1>Summary</h1>
+<ul>
+<li>An Xbox is a PC that, when modded, can run arbitrary x86 code</li>
+<li>Both Hardware and Software mods exist, each with their own pros and cons</li>
+<li>Several Xbox-specific Linux distributions are available with different benefits and disadvantages</li>
+<li>An Xbox can be used to connect to a MythTV backend from inside Linux and in XBMC via scripts</li>
+<li>All of it can be done without ever opening the case</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Resources</h1>
+<ul>
+<li><a href="http://xbox-linux.org">http://xbox-linux.org</a> - Xbox Linux distros, info</li>
+<ul>
+<li><a href="http://www.xbox-linux.org/wiki/Xebian_HOWTO">http://www.xbox-linux.org/wiki/Xebian_HOWTO</a></li>
+<li><a
+href="http://www.xbox-linux.org/wiki/MythTV_on_Xebian_HOWTO">http://www.xbox-linux.org/wiki/MythTV_on_Xebian_HOWTO</a></li>
+</ul>
+<li><a href="http://xbox-scene.org">http://xbox-scene.org</a> - Forums, homebrew apps</li>
+<ul>
+<li><a href="http://xguides.xbox-scene.com">http://xguides.xbox-scene.com</a> - Lots of guides</li>
+</ul>
+<li><a href="http://xbins.org">http://xbins.org</a> - List of software, hosts FTP server</li>
+<li><a href="http://xboxmediacenter.com">http://xboxmediacenter.com</a> - XBMC Homepage, WIKI</li>
+<li><a href="http://sourceforge.net/projects/xbmcmythtv">http://sourceforge.net/projects/xbmcmythtv</a> - XBMC-MythTV scripts homepage</li>
+<li>Press "T" to see the outline mode with more information.</li>
+</ul>
+</div>
+<div class="notes">
+Notes:<br />
+The sections above are littered with links, so feel free to navigate to those areas or search this document for the subject you need more information on.  As always, if you get stuck, a good search engine is your friend.<p>
+Happy hacking,</p><p>
+A.C.<br />
+******<br />
+</p>
+</div>
+
+</body>
+</html>

@@ -63,13 +63,19 @@ FEED_ALL_ATOM = 'feeds/all.atom'  # Redirected from /atom/feed
 FEED_ALL_ICALENDAR = 'feeds/all.ics'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['drupal_urls', 'event_calendar']
 
+READERS = {
+    # Disable processing of HTML files so that they can be used as static resources.
+    'html': None,
+}
+
 STATIC_PATHS = [
     'images',
+    'presentations',
     'static/htaccess',
     'static/favicon.ico',
     'static/robots.txt',
