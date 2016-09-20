@@ -74,7 +74,7 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -i -rvz --delete \
+	rsync -e "ssh -p $(SSH_PORT)" -i -rvz --checksum --delete \
 		--groupmap=*:nblug \
 		--chmod=D01775,F0664 \
 		$(OUTPUTDIR)/ $(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
