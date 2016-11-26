@@ -25,9 +25,9 @@ A huge thank you to O'Reilly for all they have offered us.
             /images/oreilly-sign.1000px 1000w">
 
 Our meeting room at O'Reilly is located at 1005 Gravenstein Highway North in Sebastopol.
-[Directions from Yahoo! Maps][1].
+[Directions from Google Maps][1].
 
-[1]: http://maps.yahoo.com/py/ddResults.py?Pyt=Tmap&tarname=&tardesc=&tarhash=&taraddr=1005+Gravenstein+Highway+North&tarcsz=Sebastopol,+CA+95472-4532&newtcountry=us&newcountry=us&doit=1
+[1]: https://www.google.com/maps?daddr=1005+Gravenstein+Highway+North+Sebastopol,+CA+95472-4532
 
 Gravenstein Highway is also called Hwy 116. For those who know Sebastopol, O'Reilly's campus is just past Long's Drugs and Mary's Pizza Shack heading North on 116.
 
