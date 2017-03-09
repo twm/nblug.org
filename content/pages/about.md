@@ -5,7 +5,11 @@ NBLUG is the North Bay Linux Users' Group. We are a Linux user group serving Lin
 
 We have members from Sonoma County, Marin County, Mendocino County, and Lake County, as well as states outside of California. Membership is FREE! What does it take to be a member of NBLUG? Join one of our mailing lists. If you are subscribed, then you are already a member! If you are not subscribed to a mailing list then come to one of our events and participate with us.
 
-NBLUG has been around since June 9, 1998. This was the very first meeting of NBLUG at Oreilly and Associates old building in Sebastopol. Some might argue that NBLUG has been around since the first announcement of a meeting went out to various lists on May 12, 1998 by Dustin, but I think most members will agree that NBLUG started with the first meeting.
+<img class="image-right" alt="[ Get 40% off print and 50% off ebooks at oreilly.com. Code: PCBW. ]"
+    width="125" height="125"
+    src="/images/oreilly-discount.gif">
+
+NBLUG has been around since June 9, 1998. This was the very first meeting of NBLUG at the old O'Reilly and Associates building in Sebastopol. Some might argue that NBLUG has been around since the first announcement of a meeting went out to various lists on May 12, 1998 by Dustin, but I think most members will agree that NBLUG started with the first meeting.
 
 General meetings occur every month at [O'Reilly Media in Sebastopol][locations] on the second Tuesday of each month at 7:30pm. These meetings are always FREE and everyone is welcome. Show up between 7:00pm and 7:30 to get a raffle ticket for a free prize drawing at the end of each general meeting.
 

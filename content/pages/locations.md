@@ -1,6 +1,10 @@
 Title: Find Our Meetings
 Slug: locations
 
+<img class="image-right" alt="[ Get 40% off print and 50% off ebooks at oreilly.com. Code: PCBW. ]"
+    width="125" height="125"
+    src="/images/oreilly-discount.gif">
+
 <div itemscope itemtype="http://schema.org/PostalAddress">
   <span itemprop="streetAddress">1005 Gravenstein Highway North</span><br>
   <span itemprop="addressLocality">Sebastopol</span>,
