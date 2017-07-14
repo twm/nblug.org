@@ -51,10 +51,10 @@ The duties of scribe shall include:
 > a: To take the minutes at regular meetings, as well as board meetings
 > and coordinate with the webmistress/master to have them made
 > available at the website.
-> 
+>
 > b: To conduct elections for officership and Constitutional and Bylaw
 > amendments.
-> 
+>
 > c: Share responsibility of duties assigned to absent officers
 
 v: Directors at Large are two officers who share many duties.
@@ -118,24 +118,25 @@ and the position is considered abandoned.
 
 ### Section 5: Elections for Officership and Transition
 
-Nominations for elected officerships will be opened at the meeting
-directly after the end of Daylight Saving Time (October), and will
-remain open until the beginning of the election at the next meeting.
+Nominations for elected officerships will be opened at the October
+meeting, and will remain open until the beginning of the election at
+the next meeting.
 You are allowed to nominate yourself and nominations do not need to be
 seconded. A person nominated for an officer position may decline the
 nomination at any time before the election takes place.
 
 Elections for elected officerships will be held the meeting after
-nominations are opened. Voting is to be anonymous. In the case where
-a candidate runs unopposed, scribe may ask that their approval for
-officership be passed by consent. If there is an objection to consent,
-the candidate must be approved by a 2/3 majority of a general meeting.
-If no candidate is elected for a position, nominations will be re-opened
-for that position until the next meeting, when a new election will be
-held, and so forth, as necessary until all positions are filled.
+nominations are opened (November). Voting is to be anonymous. In the
+case where a candidate runs unopposed, scribe may ask that their
+approval for officership be passed by consent. If there is an
+objection to consent, the candidate must be approved by a 2/3 majority
+of a general meeting. If no candidate is elected for a position,
+nominations will be re-opened for that position until the next
+meeting, when a new election will be held, and so forth, as necessary
+until all positions are filled.
 
 A newly-elected officer's term shall commence at the beginning of the
-meeting after elections are over.
+meeting after the meeting during which they are elected.
 
 ## Article II: Procedures
 
