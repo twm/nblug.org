@@ -64,7 +64,7 @@ def main():
                             author=author)
     filepath = 'content/news/{}-{}.md'.format(
         date.today().strftime('%Y-%m-%d'),
-        '-'.join(title.lower().split()),
+        '-'.join(title.lower().replace(',', ' ').replace(':', ' ').split()),
     )
     if os.path.exists(filepath):
         print("Can't create file; would overwrite {}".format(filepath))
