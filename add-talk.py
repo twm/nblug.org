@@ -2,7 +2,7 @@
 
 from datetime import date, timedelta
 import os
-from string import Template
+from string import Template, ascii_letters, digits
 import sys
 
 
@@ -18,6 +18,14 @@ Author: ${author}
 
 
 """)
+
+
+def sanitize(s):
+    """
+    Produce a URL-safe version of a string.
+    """
+    safe = ascii_letters + digits + "_-"
+    return "-".join("".join(c if c in safe else " " for c in s).lower().split())
 
 
 def next_second_tuesday(today):
@@ -64,7 +72,7 @@ def main():
                             author=author)
     filepath = 'content/news/{}-{}.md'.format(
         date.today().strftime('%Y-%m-%d'),
-        '-'.join(title.lower().replace(',', ' ').replace(':', ' ').split()),
+        sanitize(title),
     )
     if os.path.exists(filepath):
         print("Can't create file; would overwrite {}".format(filepath))
