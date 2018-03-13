@@ -3,6 +3,7 @@ Tags: general meeting
 Event: 2018-03-13 7:30 pm to 9:00 pm
 Speaker: Panel
 Location: O'Reilly Media
+Date: 2018/03/13 00:00
 Author: Tom Most
 
 Are you frustrated with the model/router/switch your ISP provides? Curious what your options are to improve performance or regain control? NBLUG will be holding a panel discussion about home networking, focusing on the humble router. We have representatives of several options:
