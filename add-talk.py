@@ -9,7 +9,6 @@ import sys
 TUESDAY = 1
 
 TEMPLATE = Template("""\
-Title: ${title}
 Tags: general meeting
 Event: ${date} 7:30 pm to 9:00 pm
 Speaker: ${speaker}
@@ -68,8 +67,14 @@ def main():
     speaker = raw_input("Who's the speaker? ")
     author = raw_input("What is *your* name? ")
 
-    s = TEMPLATE.substitute(title=title, date=talk_date, speaker=speaker,
-                            author=author)
+    lines = ['Title: {}\n'.format(title)]
+    if title.lower() == 'hackfest':
+        # There are a number of posts with the title of hackfest, so we must
+        # give new ones a unique slug to avoid collision. If there is more than
+        # one hackfest per year manual intervention will still be required.
+        lines.append(date.today().strftime('Slug: hackfest-%Y'))
+    lines.append(TEMPLATE.substitute(date=talk_date, speaker=speaker, author=author))
+    s = '\n'.join(lines)
     filepath = 'content/news/{}-{}.md'.format(
         date.today().strftime('%Y-%m-%d'),
         sanitize(title),
