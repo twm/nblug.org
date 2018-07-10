@@ -67,7 +67,7 @@ def main():
     speaker = raw_input("Who's the speaker? ")
     author = raw_input("What is *your* name? ")
 
-    lines = ['Title: {}\n'.format(title)]
+    lines = ['Title: {}'.format(title)]
     if title.lower() == 'hackfest':
         # There are a number of posts with the title of hackfest, so we must
         # give new ones a unique slug to avoid collision. If there is more than

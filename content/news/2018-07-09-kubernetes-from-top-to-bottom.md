@@ -1,5 +1,4 @@
 Title: Kubernetes from Top to Bottom
-
 Tags: general meeting
 Event: 2018-07-10 7:30 pm to 9:00 pm
 Speaker: Hunter Fernandes
