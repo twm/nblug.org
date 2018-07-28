@@ -6,7 +6,7 @@ Location: O'Reilly Media
 Author: Robert P. Thille
 
 
-A follow-on talk to a <a href="http://nblug.org/node/155/">previous
+A follow-on talk to a <a href="https://nblug.org/node/155/">previous
 talk</a> Mike Higgins gave here at NBLUG in the past about programming
 in the video game Second Life.  This time he'll talk about Life After
 Second Life.  There is a larger world, a Metaverse, of open source

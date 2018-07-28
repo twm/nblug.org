@@ -8,4 +8,4 @@ Drupal_Node: 74
 
 Allan will discuss how to mod the XBOX so you can run Linux from it, as well as how to use the newly-modded XBOX as a MythTV front-end.
 
-Slides are available [here](http://nblug.org/presentations/linuxonxbox/linuxonxbox.html).
+Slides are available [here](https://nblug.org/presentations/linuxonxbox/linuxonxbox.html).

@@ -12,9 +12,9 @@ Slug: installfest-2005-09
 Please note that this InstallFest is at O'Reilly in Sebastopol. Please see below for information on the exact location and directions.
 
 WHEN:  Saturday, September 17th - 10:30AM - 4:30PM PDT<br>
-WHERE: O'Reilly in Sebastopol; http://nblug.org/genloc<br>
+WHERE: O'Reilly in Sebastopol; https://nblug.org/genloc<br>
 WHO:   Anyone wanting help in installing Linux onto their computer<br>
-URL:   http://nblug.org/installfest/<br>
+URL:   https://nblug.org/installfest/<br>
 WHAT DO I DO: Go to http://www.nblug.org/installfest/ to signup!!!!
 
 ## What is an InstallFest and who can come?
@@ -25,7 +25,7 @@ Anyone is more than welcome to attend. If you need help or just want to hang out
 
 ## How do I sign up?
 
-We will again be taking signups for this InstallFest, so please be sure to visit [that URL](http://nblug.org/installfest/) if you plan on attending. Those who signup and reserve a time slot, are first in line. We've found that by taking signups, we can help more people in a timely fashion. We can also make sure that enough helpers are available for those wanting help. If you need help at the last minute, you can still just show up and we'll probably be able to help you, but it really helps us if you register first, preferably a week or more in advance so we have a chance to beg for more helpers if we need them.
+We will again be taking signups for this InstallFest, so please be sure to visit [that URL](https://nblug.org/installfest/) if you plan on attending. Those who signup and reserve a time slot, are first in line. We've found that by taking signups, we can help more people in a timely fashion. We can also make sure that enough helpers are available for those wanting help. If you need help at the last minute, you can still just show up and we'll probably be able to help you, but it really helps us if you register first, preferably a week or more in advance so we have a chance to beg for more helpers if we need them.
 
 ## What if I want to offer help?
 
