@@ -11,4 +11,4 @@ Tom Most will be presenting "An Introduction to Debian Packaging". This talk is 
 
 Comment from Allan: This should be of interest to anyone who uses a distribution that relies on .deb package management. See you there!
 
-Update: [Slides available](http://freecog.net/2014/intro-debian-packaging.pdf).
+Update: [Slides available](https://freecog.net/2014/intro-debian-packaging.pdf).
