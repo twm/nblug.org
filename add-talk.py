@@ -10,9 +10,9 @@ TUESDAY = 1
 
 TEMPLATE = Template("""\
 Tags: general meeting
-Event: ${date} 7:30 pm to 9:00 pm
+Event: ${date} 7:00 pm to 8:30 pm
 Speaker: ${speaker}
-Location: O'Reilly Media
+Location: Sonic
 Author: ${author}
 
 
