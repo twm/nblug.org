@@ -1,4 +1,5 @@
 Title: Lightning Talks & Hackfest
+Slug: lightning-talks-hackfest-2018
 Tags: general meeting
 Event: 2018-09-11 7:30 pm to 9:00 pm
 Speaker: Everyone
