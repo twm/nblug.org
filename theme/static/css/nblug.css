@@ -36,6 +36,9 @@ nav a {
 nav a:first-child {
     padding-left: 0;
 }
+nav a:hover {
+    text-decoration: underline;
+}
 
 main {
     float: left;
