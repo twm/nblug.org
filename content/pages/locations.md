@@ -27,5 +27,6 @@ Sebastopol Road.  Proceed 1/2 mile to turn left (south) onto Corporate
 Center Pkwy.  Proceed 1/3 mile (4 blocks ) to turn left (east) onto
 Apollo Way.  Sonic is on the right.
 
-**Enter by the gate at the northwest corner** (from the direction of Apollo Way), not the normal public entrance.
-We try to put out a sign with "NBLUG" on it.
+**Enter by the back entrance**, not the normal public entrance.
+This is a gate at the northwest corner, by Apollo way.
+Look for NBLUG signage.
