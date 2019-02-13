@@ -11,3 +11,5 @@ landscape, disambiguate the terminology, and discuss some use cases. Join
 us as we ascend the slope of enlightenment.
 
 Please note that this meeting takes place at a **[new location](/locations)** and time.
+
+Update: The [slides are available](https://freecog.net/2019/docker-what-is-it/).
