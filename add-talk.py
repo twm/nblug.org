@@ -59,20 +59,25 @@ def next_second_tuesday(today):
     return d.isoformat()
 
 
+def prompt(query, default=""):
+    if default:
+        suffix = " [{}] ".format(default)
+    else:
+        suffix = " "
+    return raw_input(query + suffix) or default
+
+
 def main():
-    title = raw_input("What is the title of the talk? ")
-    default_talk_date = next_second_tuesday(date.today())
-    talk_date = raw_input("What's the date of the talk? [{}] ".format(
-        default_talk_date)) or default_talk_date
-    speaker = raw_input("Who's the speaker? ")
-    author = raw_input("What is *your* name? ")
+    title = prompt("What is the title of the talk?")
+    talk_date = prompt("What's the date of the talk?", default=next_second_tuesday(date.today()))
+    speaker = prompt("Who's the speaker?")
+    author = prompt("What is *your* name?")
 
     lines = ['Title: {}'.format(title)]
     if title.lower() == 'hackfest':
         # There are a number of posts with the title of hackfest, so we must
-        # give new ones a unique slug to avoid collision. If there is more than
-        # one hackfest per year manual intervention will still be required.
-        lines.append(date.today().strftime('Slug: hackfest-%Y'))
+        # give new ones a unique slug to avoid collision.
+        lines.append(date.today().strftime('Slug: hackfest-%Y-%m'))
     lines.append(TEMPLATE.substitute(date=talk_date, speaker=speaker, author=author))
     s = '\n'.join(lines)
     filepath = 'content/news/{}-{}.md'.format(
