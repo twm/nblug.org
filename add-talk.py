@@ -1,5 +1,6 @@
 #!/usr/bin/env python2.7
 
+import argparse
 from datetime import date, timedelta
 import os
 from string import Template, ascii_letters, digits
@@ -15,8 +16,11 @@ Speaker: ${speaker}
 Location: Sonic
 Author: ${author}
 
-
+${body}
 """)
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--hackfest', default=False, action='store_true', help="Prefill as a hackfest.")
 
 
 def sanitize(s):
@@ -67,18 +71,48 @@ def prompt(query, default=""):
     return raw_input(query + suffix) or default
 
 
+def get_gecos():
+    try:
+        import pwd
+    except ImportError:
+        return ""
+
+    try:
+        passwd = pwd.getpwuid(os.getuid())
+    except KeyError:
+        return ""
+
+    return passwd[4].split(',')[0]
+
+
 def main():
-    title = prompt("What is the title of the talk?")
-    talk_date = prompt("What's the date of the talk?", default=next_second_tuesday(date.today()))
-    speaker = prompt("Who's the speaker?")
-    author = prompt("What is *your* name?")
+    is_hackfest = parser.parse_args().hackfest
+
+    talk_date = prompt(
+        "What's the date of the talk?",
+        default=next_second_tuesday(date.today()),
+    )
+    if is_hackfest:
+        title = "Lightning Talks & Hackfest"
+        speaker = "Everyone"
+        body = (
+            "**Lightning Talks:** Have something you would like to present, but don't have enough material for a full talk?  Here's your chance.  Talk about anything Linux related.\n"
+            "\n"
+            "**Hackfest:** Bring your hardware or software project to get help with it or just to show it off. A mix of free tech support, show-and-tell, and idle chat.\n"
+        )
+    else:
+        title = prompt("What is the title of the talk?")
+        speaker = prompt("Who's the speaker?")
+        body = ""
+
+    author = prompt("What is *your* name?", default=get_gecos())
 
     lines = ['Title: {}'.format(title)]
-    if title.lower() == 'hackfest':
+    if is_hackfest:
         # There are a number of posts with the title of hackfest, so we must
         # give new ones a unique slug to avoid collision.
         lines.append(date.today().strftime('Slug: hackfest-%Y-%m'))
-    lines.append(TEMPLATE.substitute(date=talk_date, speaker=speaker, author=author))
+    lines.append(TEMPLATE.substitute(date=talk_date, speaker=speaker, author=author, body=body))
     s = '\n'.join(lines)
     filepath = 'content/news/{}-{}.md'.format(
         date.today().strftime('%Y-%m-%d'),
