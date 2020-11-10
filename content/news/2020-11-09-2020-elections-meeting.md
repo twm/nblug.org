@@ -2,7 +2,7 @@ Title: 2020 Elections Meeting
 Tags: general meeting
 Event: 2020-11-10 7:00 pm to 8:30 pm
 Speaker: Everyone
-Location: Sonic
+Location: Online
 Author: Tom Most
 
 Greetings,
@@ -15,5 +15,5 @@ A meeting link will follow.
 We have not had any speakers come forward since the COVID-19 restrictions started and we do not currently have a talk scheduled so for the moment this is a meeting to handle elections.
 Our talk email list remains open for conversing, as does our #nblug channel on Freenode IRC. Thanks,
 
-A.C.
+A.C.<br>
 President, North Bay Linux Users' Group
