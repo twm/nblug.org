@@ -13,7 +13,7 @@ Our scribe, Frank, will be handling the election process and will shortly send o
 A meeting link will follow.
 
 We have not had any speakers come forward since the COVID-19 restrictions started and we do not currently have a talk scheduled so for the moment this is a meeting to handle elections.
-Our talk email list remains open for conversing, as does our #nblug channel on Freenode IRC. Thanks,
+Our talk email list remains open for conversing, as does our #nblug channel on <del>Freenode</del> <ins>Libera.Chat</ins> IRC. Thanks,
 
 A.C.<br>
 President, North Bay Linux Users' Group
