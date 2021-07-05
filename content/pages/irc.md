@@ -1,5 +1,5 @@
 Title: #nblug IRC Channel
-Slug: nblug-irc
+Slug: irc
 
 IRC is Internet Relay Chat,
 and is what people used to communicate with text and keyboards through the Internet in real-time before Telegram, Discord, and ICQ existed.
