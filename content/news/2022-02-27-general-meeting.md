@@ -1,7 +1,6 @@
 Title: March General Meeting
 Tags: general meeting
 Event: 2022-03-08 7:00 pm to 8:30 pm
-Location: Sonic
 Author: Tom Most
 
 We're going to hold another regular meeting on Tuesday March 8 at
