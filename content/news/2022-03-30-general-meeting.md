@@ -2,6 +2,7 @@ Title: April General Meeting
 Slug: general-meeting-april-2022
 Tags: general meeting
 Event: 2022-04-12 7:00 pm to 8:30 pm
+Location: Flagship Taproom / Spring Thai
 Author: Tom Most
 
 We’re going to keep going with the outdoor meetings for now.
