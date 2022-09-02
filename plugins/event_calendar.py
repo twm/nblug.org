@@ -1,5 +1,5 @@
 # Pelican Event Calendar plugin for NBLUG.org
-# Copyright (C) 2014 Tom Most
+# Copyright (C) 2014, 2022 Tom Most
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -29,8 +29,8 @@ import os
 import re
 
 import icalendar
-import jinja2
 import pytz
+from markupsafe import Markup
 from pelican import signals
 
 # Matches a time range like "2014-01-02 7:00 am to 4:00 pm" or "2013/3/4
@@ -155,7 +155,7 @@ class CalendarGenerator(object):
             start = getattr(article, "event_start", None)
             if start and self.timezone.localize(start) > threshold:
                 e = icalendar.Event()
-                e.add("summary", jinja2.Markup(article.title).striptags())
+                e.add("summary", Markup(article.title).striptags())
                 e.add("dtstart", self.timezone.localize(start).astimezone(pytz.utc))
                 e.add(
                     "dtend",
