@@ -23,20 +23,20 @@ The calendar is written to the location specified by the
 
 from __future__ import unicode_literals
 
-import errno
-import re
-import os
 import datetime
+import errno
+import os
+import re
 
-import pytz
 import icalendar
 import jinja2
+import pytz
 from pelican import signals
-
 
 # Matches a time range like "2014-01-02 7:00 am to 4:00 pm" or "2013/3/4
 # 07:30PM - 09:00PM".
-EVENT_RE = re.compile('''
+EVENT_RE = re.compile(
+    r"""
     (?P<year>\d\d\d\d)
     \D
     (?P<month>\d\d?)
@@ -53,7 +53,9 @@ EVENT_RE = re.compile('''
     :
     (?P<end_min>\d\d)
     (?P<end_p>\s*[ap]m?)
-''', re.IGNORECASE | re.VERBOSE)
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
 
 
 def get_generators(pelican):
@@ -80,41 +82,43 @@ def coerce_metadata(generator, metadata=None):
         find interesting
     :raises ValueError: for unparseable date strings
     """
-    if not metadata or 'event' not in metadata:
+    if not metadata or "event" not in metadata:
         return
 
-    event_str = metadata.pop('event')
+    event_str = metadata.pop("event")
     m = EVENT_RE.match(event_str)
     if m is None:
-        raise ValueError("Invalid event {!r}: try something like '1970-01-01 7:00 pm to 9:30 pm'".format(
-            event_str))
+        raise ValueError(
+            "Invalid event {!r}: try something like '1970-01-01 7:00 pm to 9:30 pm'".format(
+                event_str
+            )
+        )
 
     date = datetime.date(
-        int(m.group('year')),
-        int(m.group('month')),
-        int(m.group('day')),
+        int(m.group("year")),
+        int(m.group("month")),
+        int(m.group("day")),
     )
 
     def ampm_offset(s):
-        if 'p' in s.lower():
+        if "p" in s.lower():
             return 12
         return 0
 
     start = datetime.time(
-        int(m.group('start_hour')) + ampm_offset(m.group('start_p')),
-        int(m.group('start_min')),
+        int(m.group("start_hour")) + ampm_offset(m.group("start_p")),
+        int(m.group("start_min")),
     )
     end = datetime.time(
-        int(m.group('end_hour')) + ampm_offset(m.group('end_p')),
-        int(m.group('end_min')),
+        int(m.group("end_hour")) + ampm_offset(m.group("end_p")),
+        int(m.group("end_min")),
     )
 
     if start >= end:
-        raise ValueError('Invalid event {!r}: ends before it starts!'.format(
-            event_str))
+        raise ValueError("Invalid event {!r}: ends before it starts!".format(event_str))
 
-    metadata['event_start'] = datetime.datetime.combine(date, start)
-    metadata['event_end'] = datetime.datetime.combine(date, end)
+    metadata["event_start"] = datetime.datetime.combine(date, start)
+    metadata["event_end"] = datetime.datetime.combine(date, end)
 
 
 def event_from_article(article):
@@ -132,29 +136,34 @@ class CalendarGenerator(object):
     def __init__(self, context, settings, path, theme, output_path):
         self.context = context
         self.settings = settings
-        self.timezone = pytz.timezone(settings['TIMEZONE'])
+        self.timezone = pytz.timezone(settings["TIMEZONE"])
 
     def generate_context(self):
         """
         Scrape calendar events from articles and generate a calendar.
         """
         cal = icalendar.Calendar()
-        cal.add('version', '2.0')
-        cal.add('prodid', '-//Pelican Calendar Plugin//nblug.org//')
-        cal.add('x-wr-calname', 'NBLUG Events')
+        cal.add("version", "2.0")
+        cal.add("prodid", "-//Pelican Calendar Plugin//nblug.org//")
+        cal.add("x-wr-calname", "NBLUG Events")
 
-        threshold = pytz.utc.localize(datetime.datetime.utcnow() - datetime.timedelta(days=60))
+        threshold = pytz.utc.localize(
+            datetime.datetime.utcnow() - datetime.timedelta(days=60)
+        )
 
-        for article in self.context['articles']:
-            start = getattr(article, 'event_start', None)
+        for article in self.context["articles"]:
+            start = getattr(article, "event_start", None)
             if start and self.timezone.localize(start) > threshold:
                 e = icalendar.Event()
-                e.add('summary', jinja2.Markup(article.title).striptags())
-                e.add('dtstart', self.timezone.localize(start).astimezone(pytz.utc))
-                e.add('dtend', self.timezone.localize(article.event_end).astimezone(pytz.utc))
-                e.add('status', 'CONFIRMED')
-                if getattr(article, 'location', ''):
-                    e['location'] = icalendar.vText(article.location)
+                e.add("summary", jinja2.Markup(article.title).striptags())
+                e.add("dtstart", self.timezone.localize(start).astimezone(pytz.utc))
+                e.add(
+                    "dtend",
+                    self.timezone.localize(article.event_end).astimezone(pytz.utc),
+                )
+                e.add("status", "CONFIRMED")
+                if getattr(article, "location", ""):
+                    e["location"] = icalendar.vText(article.location)
                 cal.add_component(e)
 
         self.calendar = cal
@@ -167,11 +176,11 @@ class CalendarGenerator(object):
             if e.errno != errno.EEXIST:
                 raise
 
-        return open(path, 'wb')
+        return open(path, "wb")
 
     def generate_output(self, writer):
         """
         Write the calendar to the output directory.
         """
-        with self._open_w(writer, self.settings['FEED_ALL_ICALENDAR']) as f:
+        with self._open_w(writer, self.settings["FEED_ALL_ICALENDAR"]) as f:
             f.write(self.calendar.to_ical())
