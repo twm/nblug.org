@@ -14,11 +14,9 @@ To make it easy to reproduce the site exactly, we install pinned versions of all
 Bootstrap requires this tool in the host system.
 On a Debian-like system:
 
-    sudo apt-get install python-virtualenv
+    sudo apt install python3-venv
 
-(On Debian Jessie the package has been renamed to ``virtualenv``.)
-
-Next create and initialize the virtualenv:
+Next create and initialize the virtual environment:
 
     make init
 
