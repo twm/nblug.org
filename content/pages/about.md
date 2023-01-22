@@ -20,6 +20,6 @@ We invite you to look at our [news page][news] and check out our upcoming events
 If you have questions or comments, please email us at linux (at) nblug.org.
 
 [locations]: /locations/
-[announce]: /mailman/listinfo/announce
-[talk]: /mailman/listinfo/talk
+[announce]: /mailman3/postorius/lists/announce.nblug.org/
+[talk]: /mailman3/postorius/lists/talk.nblug.org/
 [news]: /
