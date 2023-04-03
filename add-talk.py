@@ -114,7 +114,7 @@ def main():
         f"Event: {talk_date:%Y-%m-%d} 6:30 pm to 8:00 pm",
         # f"Event: {talk_date:%Y-%m-%d} 7:00 pm to 8:30 pm",
         f"Speaker: {speaker}" if speaker else None,
-        "Location: Down to Earth Cafe",
+        "Location: Redwood Cafe",
         # "Location: Flagship Taproom / Spring Thai",
         f"Author: {author}",
         "",
