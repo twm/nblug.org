@@ -20,27 +20,27 @@ We currently meet at <a href="https://redwoodcafecotati.com/">Redwood Cafe</a> i
 &bull; <a href="https://www.mapquest.com/us/ca/cotati/94931-5208/8240-old-redwood-hwy-38.32575,-122.7051">MapQuest</a>
 &bull; <a href="https://wego.here.com/directions/mix//8240-Old-Redwood-Hwy,-Cotati,-CA-94931-5208,-USA:here:af:streetsection:AuJM4ymkmwBof78RCsIH7D:CgcIBCCKr7gPEAEaBDgyNDA?map=38.32575,-122.7051,15,normal">HERE Maps</a>
 
-Redwood Cafe is located in downtown Cotati, south of La Plaza Park (where the accordion festival is held).
+Flagship is located in downtown Cotati, immediately northwest of La Plaza Park (where the accordion festival is held).
 
 **By car:**
 
-From the south on 101 take the 481A exit to Downtown Cotati, taking a right on West Sierra Ave, and a right on Old Redwood Highway at the light; park anywhere.
-Head south past the tents to Redwood Cafe.
+From the south on 101 take the 481A exit to Downtown Cotati, taking a right on West Sierra Ave, and a left on Old Redwood Highway at the light; park anywhere.
+Flagship is just north of the La Plaza Park gazebo.
 
 From the north on 101 take exit 481 to Cotati, using the middle-left lane.
 Turn left onto Gravenstein Highway, then right onto Old Redwood Highway.
-Continue south through the light; park anywhere.
-Head south past the tents to Redwood Cafe.
+Turn right at the stop sign for La Plaza.
+Flagship is on the right; park anywhere.
 
 **By transit:**
 
-Redwood Cafe is a half-block south of the Cotati Transit Hub, which is served by [Sonoma County Transit Route 10](https://sctransit.com/maps-schedules/route-10/).
+Flagship is a block north of the Cotati Transit Hub, which is served by [Sonoma County Transit Route 10](https://sctransit.com/maps-schedules/route-10/).
 
 [Golden Gate Transit](https://www.goldengate.org/bus/schedules-maps/) stops at the nearby La Plaza Park.
 
 The [SMART Train](https://www.sonomamarintrain.org/) stops at Cotati Station, a 15 minute walk away from downtown Cotati.
 Head east on East Cotati until you reach Old Redwood Highway (you'll see the fire station to the right).
-Take a left and continue half a block; Redwood Cafe is on the left.
+Cross and take a right and continue through the park; we meet under the tent across La Plaza street.
 
 <!--
 <div itemscope itemtype="http://schema.org/PostalAddress">
