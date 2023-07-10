@@ -5,14 +5,16 @@ Slug: locations
     width="125" height="125" style="image-rendering: crisp-edges"
     src="/images/oreilly-discount.gif">
 
-We currently meet at <a href="https://redwoodcafecotati.com/">Redwood Cafe</a> in Cotati:
+We currently meet at <a href="https://www.flagshiptaproom.com/cotati">Flagship Taproom</a> in Cotati:
 
 <div itemscope itemtype="http://schema.org/PostalAddress">
-  <span itemprop="streetAddress">8240 Old Redwood Highway</span><br>
+  <span itemprop="streetAddress">8099 La Plaza St #B</span><br>
   <span itemprop="addressLocality">Cotati</span>,
   <span itemprop="addressRegion">CA</span>
   <span itemprop="postalCode">94931</span>
 </div>
+
+Find us in the tent in the parking lot.
 
 ## Directions
 
