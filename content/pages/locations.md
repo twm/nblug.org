@@ -5,10 +5,10 @@ Slug: locations
     width="125" height="125" style="image-rendering: crisp-edges"
     src="/images/oreilly-discount.gif">
 
-We currently meet at <a href="https://www.flagshiptaproom.com/cotati">Flagship Taproom</a> in Cotati:
+We currently meet at [Redwood Cafe](https://redwoodcafecotati.com/) in Cotati:
 
 <div itemscope itemtype="http://schema.org/PostalAddress">
-  <span itemprop="streetAddress">8099 La Plaza St #B</span><br>
+  <span itemprop="streetAddress">8240 Old Redwood Highway</span><br>
   <span itemprop="addressLocality">Cotati</span>,
   <span itemprop="addressRegion">CA</span>
   <span itemprop="postalCode">94931</span>
@@ -20,29 +20,29 @@ Find us in the tent in the parking lot.
 
 <a href="https://www.google.com/maps/place/Redwood+Cafe/@38.325403,-122.7055017,20.08z/data=!4m15!1m8!3m7!1s0x80844a88f39234f9:0x62f168a97a5729cc!2s8240+Old+Redwood+Hwy,+Cotati,+CA+94931!3b1!8m2!3d38.3256851!4d-122.7051772!16s%2Fg%2F11bw3y2_jb!3m5!1s0x80844a88f3ad969d:0xb725bf0c7182197d!8m2!3d38.3256149!4d-122.7052078!16s%2Fg%2F1v76zwpl">Google Maps</a>
 &bull; <a href="https://www.mapquest.com/us/ca/cotati/94931-5208/8240-old-redwood-hwy-38.32575,-122.7051">MapQuest</a>
-&bull; <a href="https://wego.here.com/directions/mix//8240-Old-Redwood-Hwy,-Cotati,-CA-94931-5208,-USA:here:af:streetsection:AuJM4ymkmwBof78RCsIH7D:CgcIBCCKr7gPEAEaBDgyNDA?map=38.32575,-122.7051,15,normal">HERE Maps</a>
+&bull; <a href="https://wego.here.com/directions/drive//Redwood%20Cafe:38.32575,-122.7051?map=38.32575,-122.7051,15,normal">HERE Maps</a>
 
-Flagship is located in downtown Cotati, immediately northwest of La Plaza Park (where the accordion festival is held).
+Redwood Cafe is located in downtown Cotati, south of La Plaza Park (where the accordion festival is held).
 
 **By car:**
 
-From the south on 101 take the 481A exit to Downtown Cotati, taking a right on West Sierra Ave, and a left on Old Redwood Highway at the light; park anywhere.
-Flagship is just north of the La Plaza Park gazebo.
+From the south on 101 take the 481A exit to Downtown Cotati, taking a right on West Sierra Ave, and a right on Old Redwood Highway at the light; park anywhere.
+Head south past the tents to Redwood Cafe.
 
 From the north on 101 take exit 481 to Cotati, using the middle-left lane.
 Turn left onto Gravenstein Highway, then right onto Old Redwood Highway.
-Turn right at the stop sign for La Plaza.
-Flagship is on the right; park anywhere.
+Continue south through the light; park anywhere.
+Head south past the tents to Redwood Cafe.
 
 **By transit:**
 
-Flagship is a block north of the Cotati Transit Hub, which is served by [Sonoma County Transit Route 10](https://sctransit.com/maps-schedules/route-10/).
+Redwood Cafe is a half-block south of the Cotati Transit Hub, which is served by [Sonoma County Transit Route 10](https://sctransit.com/maps-schedules/route-10/).
 
 [Golden Gate Transit](https://www.goldengate.org/bus/schedules-maps/) stops at the nearby La Plaza Park.
 
 The [SMART Train](https://www.sonomamarintrain.org/) stops at Cotati Station, a 15 minute walk away from downtown Cotati.
 Head east on East Cotati until you reach Old Redwood Highway (you'll see the fire station to the right).
-Cross and take a right and continue through the park; we meet under the tent across La Plaza street.
+Take a left and continue half a block; Redwood Cafe is on the left.
 
 <!--
 <div itemscope itemtype="http://schema.org/PostalAddress">

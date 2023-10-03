@@ -113,7 +113,7 @@ def main():
         "Tags: general meeting",
         f"Event: {talk_date:%Y-%m-%d} 7:00 pm to 8:30 pm",
         f"Speaker: {speaker}" if speaker else None,
-        "Location: Flagship Taproom",
+        "Location: Redwood Cafe",
         f"Author: {author}",
         f"Slug: {talk_date.strftime('%B-%Y').lower()}",
         "",
