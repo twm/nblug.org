@@ -1,7 +1,7 @@
 Title: April General Meeting
 Tags: general meeting
 Event: 2024-04-09 7:00 pm to 8:30 pm
-Location: Redwood Cafe
+Location: Flagship Taproom
 Author: Tom Most
 Slug: april-2024
 
