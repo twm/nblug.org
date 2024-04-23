@@ -11,7 +11,9 @@ We have members from Sonoma County, Marin County, Mendocino County, and Lake Cou
 
 NBLUG has been around since June 9, 1998. This was the very first meeting of NBLUG at the old O'Reilly and Associates building in Sebastopol. Some might argue that NBLUG has been around since the first announcement of a meeting went out to various lists on May 12, 1998 by Dustin, but I think most members will agree that NBLUG started with the first meeting.
 
-General meetings occur every month at [Sonic in Santa Rosa][locations] on the second Tuesday of each month at 7:00pm. These meetings are always FREE and everyone is welcome. Show up between 6:30pm and 7:00.
+General meetings on the second Tuesday of each month at 7:00pm ([directions][locations]).
+These meetings are always FREE and everyone is welcome.
+Show up between 6:30pm and 7:00.
 
 Join our [announce mailing list][announce] to receive notice of upcoming NBLUG events or our [talk mailing list][talk] to discuss Linux and related topics.
 
