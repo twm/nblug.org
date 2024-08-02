@@ -1,17 +1,48 @@
 /*!
  * Styles for the nblug.org Pelican theme
- * Copyright 2003-2014 NBLUG Board Members
+ * Copyright 2003-2014, 2024 NBLUG Board Members
  * Creative Commons Attribution/ShareAlike 2.0 Generic license
  *
- * Original author: Tom Most, 2014
+ * Original author: Tom Most; 2014, 2024
  */
 
+:root {
+    --background-color: white;
+    --text-color: #111;
+    --chill-text-color: #444;
+    --link-color: #369;
+    --visited-color: #551a8b;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --background-color: black;
+        --text-color: white;
+        --chill-text-color: #666;
+        --link-color: #3b8ee1;
+        --visited-color: #a676d3;
+    }
+    .invert-in-dark-mode {
+        filter: invert(70%) hue-rotate(180deg);
+    }
+}
+
 body {
-    background: white;
-    color: #111;
+    background: var(--background-color);
+    color: var(--text-color);
     font: 14px/1.5 "Liberation Sans", "Helvetica", "Arial", sans-serif;
     padding: 16px;
 }
+
+:link {
+    color: var(--link-color);
+}
+
+:visited {
+    color: var(--visited-color);
+}
+
 #wrap {
     margin: 0 auto;
     max-width: 1000px;
@@ -27,9 +58,9 @@ nav {
     padding: 0.5em 0;
 }
 nav a {
+    --visited-color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
-    color: #369;
     padding: 0 1em;
     white-space: nowrap;
 }
@@ -63,20 +94,15 @@ main {
 #about {
     background: #369;
     color: #f2f8ff;
+    --link-color: currentColor;
+    --visited-color: currentColor;
     font-size: smaller;
     padding: 0 1em;
     /* FIXME: these borders are a hack to prevent margin collapsing */
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-#about :link,
-#about :visited {
-    color: #f2f8ff;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
-#sponsors {
-    background: white;
-}
 #sponsors img {
     display: block;
     max-width: 100%;
@@ -184,7 +210,7 @@ header :visited:focus {
 }
 .toc :link,
 .toc :visited {
-    color: inherit;
+    color: currentColor;
     display: block;
 }
 /* Style the current link as bold text */
@@ -196,12 +222,9 @@ header :visited:focus {
 
 footer {
     clear: both; /* Below the main columns */
-    background: white;
-    color: #444;
+    color: var(--chill-text-color);
+    --link-color: currentColor;
+    --visited-color: currentColor;
     font-size: smaller;
     padding: 1px solid 
-}
-footer :link,
-footer :visited {
-    color: inherit;
 }
