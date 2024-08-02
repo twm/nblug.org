@@ -40,10 +40,10 @@ CoLab<br>
 Santa Rosa, CA 95401
 
 The door will be locked, so Scott will need to let people in.
-Text him at 707-416-5811 when you arrive.
+Text him at [707-416-5811](tel:7074165811) when you arrive.
 
-After the demo (around 8pm), we'll head around the corner to Flagship
-Taproom Santa Rosa:
+After the demo (around 8pm),
+we'll head around the corner to Flagship Taproom Santa Rosa:
 
 Flagship Taproom Santa Rosa<br>
 446 B St.<br>
