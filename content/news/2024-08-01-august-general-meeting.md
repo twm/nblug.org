@@ -2,7 +2,7 @@ Title: August General Meeting
 Tags: general meeting
 Event: 2024-08-13 7:00 pm to 8:30 pm
 Speaker: Scott Larson
-Location: Flagship Taproom
+Location: CoLab Presentation Lab
 Author: Tom Most
 Slug: august-2024
 
