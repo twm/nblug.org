@@ -14,9 +14,7 @@ TEMPLATE = Template(
 )
 
 parser = argparse.ArgumentParser()
-parser.add_argument(
-    "--hackfest", default=False, action="store_true", help="Prefill as a hackfest."
-)
+parser.add_argument("--prefill", default=None, choices=("talk", "hackfest"))
 
 
 def sanitize(s):
@@ -82,7 +80,7 @@ def get_gecos():
 
 
 def main():
-    is_hackfest = parser.parse_args().hackfest
+    prefill = parser.parse_args().prefill
 
     talk_date = date.fromisoformat(
         prompt(
@@ -90,21 +88,44 @@ def main():
             default=next_second_tuesday(date.today()).isoformat(),
         )
     )
-    if is_hackfest:
+    if prefill == "hackfest":
         title = "Lightning Talks & Hackfest"
         speaker = "Everyone"
+        # There are a number of posts with the title of hackfest, so we must
+        # give new ones a unique slug to avoid collision.
+        slug = date.today().strftime("Slug: hackfest-%Y-%m")
         body = (
             "**Lightning Talks:** Have something you would like to present, but don't have enough material for a full talk?  Here's your chance.  Talk about anything Linux related.\n"
             "\n"
-            "**Hackfest:** Bring your hardware or software project to get help with it or just to show it off. A mix of free tech support, show-and-tell, and idle chat.\n"
+            "**Hackfest:** Bring your hardware or software project to get help with it or just to show it off. A mix of free tech support, show-and-tell, and idle chat.\n",
         )
-    else:
+    elif prefill == "talk":
         title = prompt(
             "What is the title of the talk?",
             default=f"{talk_date:%B} General Meeting",
         )
         speaker = prompt("Who's the speaker?")
+        slug = None
         body = ""
+    else:
+        title = f"{talk_date:%B} General Meeting"
+        speaker = ""
+        slug = talk_date.strftime("%B-%Y").lower()
+        body = f"""\
+The {talk_date:%B} meeting will be {talk_date:%A, %B %d} at 7:00pm, at Flagship Taproom:
+
+[Flagship Taproom](https://www.flagshiptaproom.com/cotati)<br>
+8099 La Plaza St, Cotati
+
+As always, feel free to bring any sort of Linux gadgets,
+old-school mechanical gadgets, questions, anything you want to talk
+about, etc.
+
+See you there,
+
+Tom Most<br>
+Vice President, North Bay Linux Users' Group
+"""
 
     author = prompt("What is *your* name?", default=get_gecos())
 
@@ -115,22 +136,14 @@ def main():
         f"Speaker: {speaker}" if speaker else None,
         "Location: Flagship Taproom",
         f"Author: {author}",
-        f"Slug: {talk_date.strftime('%B-%Y').lower()}",
+        f"Slug: {slug}" if slug else None,
         "",
         body,
     ]
-    if is_hackfest:
-        # There are a number of posts with the title of hackfest, so we must
-        # give new ones a unique slug to avoid collision.
-        lines.append(date.today().strftime("Slug: hackfest-%Y-%m"))
-    lines.append(body)
-    s = "\n".join(filter(None, lines))
-    filepath = "content/news/{}-{}.md".format(
-        date.today().strftime("%Y-%m-%d"),
-        sanitize(title),
-    )
+    s = "\n".join((ln for ln in lines if ln is not None))
+    filepath = f"content/news/{date.today():%Y-%m-%d}-{sanitize(title)}.md"
     if os.path.exists(filepath):
-        print("Can't create file; would overwrite {}".format(filepath))
+        print(f"Can't create file; would overwrite {filepath!r}")
         sys.exit(1)
     with open(filepath, "w") as f:
         f.write(s)
