@@ -3,7 +3,7 @@ Slug: board
 
 The following is a list of the current NBLUG board members.
 
-* **President:** Derek Noonburg
+* **President:** OPEN
 * **Vice President:** Tom Most
 * **Scribe:** E. Frank Ball
 * **Treasurer:** Matt Dasilva
