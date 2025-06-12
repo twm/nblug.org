@@ -5,7 +5,7 @@ Slug: locations
     width="125" height="125" style="image-rendering: crisp-edges"
     src="/images/oreilly-discount.gif">
 
-We currently meet at [Flagship Taproom](https://www.flagshiptaproom.com/cotati) in Cotati:
+We currently meet at [Flagship Taproom](https://www.flagshiptaproom.com/cotati), a restraunt and bar in downtown Cotati:
 
 <div itemscope itemtype="http://schema.org/PostalAddress">
   <span itemprop="streetAddress">8099 La Plaza St</span><br>
@@ -14,7 +14,7 @@ We currently meet at [Flagship Taproom](https://www.flagshiptaproom.com/cotati) 
   <span itemprop="postalCode">94931</span>
 </div>
 
-Find us on the patio in the parking lot.
+You’ll usually find us on the patio in the parking lot, or in the back room for a presentation.
 
 ## Directions
 
