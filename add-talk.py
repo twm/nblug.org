@@ -112,10 +112,10 @@ def main():
         speaker = ""
         slug = talk_date.strftime("%B-%Y").lower()
         body = f"""\
-The {talk_date:%B} meeting will be {talk_date:%A, %B %d} at 7:00pm, at Flagship Taproom:
+The {talk_date:%B} meeting will be {talk_date:%A, %B %d} at 7:00pm, at Redwood Cafe:
 
-[Flagship Taproom](https://www.flagshiptaproom.com/cotati)<br>
-8099 La Plaza St, Cotati
+[Redwood Cafe](https://redwoodcafecotati.com/)<br>
+8240 Old Redwood Highway, Cotati
 
 As always, feel free to bring any sort of Linux gadgets,
 old-school mechanical gadgets, questions, anything you want to talk
@@ -134,7 +134,7 @@ Vice President, North Bay Linux Users' Group
         "Tags: general meeting",
         f"Event: {talk_date:%Y-%m-%d} 7:00 pm to 8:30 pm",
         f"Speaker: {speaker}" if speaker else None,
-        "Location: Flagship Taproom",
+        "Location: Redwood Cafe",
         f"Author: {author}",
         f"Slug: {slug}" if slug else None,
         "",
