@@ -24,3 +24,5 @@ See you there,
 
 Tom Most<br>
 Vice President, North Bay Linux Users' Group
+
+Update: You can [find Kyle's slides on his web site](https://greenfly.org/talks/misc/cabin.html).
