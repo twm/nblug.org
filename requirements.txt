@@ -2,3 +2,4 @@ pelican
 markdown
 typogrify
 icalendar >= 3.0
+pytz
